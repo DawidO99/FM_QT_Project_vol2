@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NewGameClass</class>
+ <widget class="QMainWindow" name="NewGameClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1047</width>
+    <height>892</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>NewGame</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="page_create_team">
+       <layout class="QVBoxLayout" name="verticalLayout" stretch="1,1,1">
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignVCenter">
+         <widget class="QFrame" name="frame_2">
+          <property name="frameShape">
+           <enum>QFrame::Shape::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Shadow::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QLabel" name="label_5">
+             <property name="text">
+              <string>Enter your save name</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTextEdit" name="textEdit_save_name"/>
+           </item>
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>Enter your name</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTextEdit" name="textEdit_player_name"/>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>Enter your team name</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTextEdit" name="textEdit_team_name"/>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_4">
+             <property name="text">
+              <string>Enter your team acronym(3 letters):</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTextEdit" name="textEdit_team_acronym"/>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_confirm_next_page">
+             <property name="text">
+              <string>Confirm</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_pick_players">
+       <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0">
+        <item>
+         <widget class="QFrame" name="frame">
+          <property name="frameShape">
+           <enum>QFrame::Shape::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Shadow::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_4" stretch="1,6">
+           <property name="sizeConstraint">
+            <enum>QLayout::SizeConstraint::SetMinimumSize</enum>
+           </property>
+           <item>
+            <widget class="QFrame" name="frame_heading">
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_8" stretch="5,1">
+              <item>
+               <widget class="QLabel" name="label_2">
+                <property name="text">
+                 <string>Pick your team</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_confirm_into_load_game">
+                <property name="text">
+                 <string>Confirm</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_idk">
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <item>
+               <spacer name="horizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Orientation::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>261</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_field">
+                <property name="minimumSize">
+                 <size>
+                  <width>432</width>
+                  <height>654</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>432</width>
+                  <height>654</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">image: url(:/field/images/soccer_field.png);</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Shape::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_5" stretch="4,0,4,0,4,0,4,0,4,0,1">
+                 <item>
+                  <spacer name="verticalSpacer_3">
+                   <property name="orientation">
+                    <enum>Qt::Orientation::Vertical</enum>
+                   </property>
+                   <property name="sizeType">
+                    <enum>QSizePolicy::Policy::Expanding</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_3">
+                   <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                    <widget class="QComboBox" name="comboBox_center_forward">
+                     <item>
+                      <property name="text">
+                       <string>Kamil Zdun</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Damian Wąsik</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Cezary Baryka</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer_5">
+                   <property name="orientation">
+                    <enum>Qt::Orientation::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_4">
+                   <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                    <widget class="QComboBox" name="comboBox_left_forward"/>
+                   </item>
+                   <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                    <widget class="QComboBox" name="comboBox_offensive_midfielder"/>
+                   </item>
+                   <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                    <widget class="QComboBox" name="comboBox_right_forward"/>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer_6">
+                   <property name="orientation">
+                    <enum>Qt::Orientation::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_5">
+                   <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                    <widget class="QComboBox" name="comboBox_defensive_midfielder_1"/>
+                   </item>
+                   <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                    <widget class="QComboBox" name="comboBox_defensive_midfielder_2"/>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer_7">
+                   <property name="orientation">
+                    <enum>Qt::Orientation::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_6">
+                   <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                    <widget class="QComboBox" name="comboBox_left_back"/>
+                   </item>
+                   <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                    <widget class="QComboBox" name="comboBox_center_back_1"/>
+                   </item>
+                   <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                    <widget class="QComboBox" name="comboBox_center_back_2"/>
+                   </item>
+                   <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                    <widget class="QComboBox" name="comboBox_right_back"/>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer_8">
+                   <property name="orientation">
+                    <enum>Qt::Orientation::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_7">
+                   <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                    <widget class="QComboBox" name="comboBox_goalkeeper"/>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer_4">
+                   <property name="orientation">
+                    <enum>Qt::Orientation::Vertical</enum>
+                   </property>
+                   <property name="sizeType">
+                    <enum>QSizePolicy::Policy::Expanding</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_2">
+                <property name="orientation">
+                 <enum>Qt::Orientation::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="NewGame.qrc"/>
+ </resources>
+ <connections/>
+</ui>

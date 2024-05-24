@@ -2,6 +2,8 @@
 
 #include <QtWidgets/QMainWindow>
 #include "ui_StartScreen.h"
+#include "NewGame.h"
+#include "LoadGame.h"
 
 class StartScreen : public QMainWindow
 {
@@ -13,4 +15,7 @@ public:
 
 private:
     Ui::StartScreenClass ui;
+    NewGame NewGame_class;
+private slots:
+    void on_pushButton_start_game_clicked();
 };

@@ -16,6 +16,8 @@ public:
 private:
     Ui::StartScreenClass ui;
     NewGame NewGame_class;
+    LoadGame LoadGame_class;
 private slots:
     void on_pushButton_start_game_clicked();
+    void on_pushButton_load_game_clicked();
 };

@@ -24,5 +24,7 @@ private slots:
 	void on_pushButton_schedule_clicked();
 	void on_pushButton_table_clicked();
 	void on_pushButton_confirm_next_page_clicked();
+	void on_pushButton_exit_clicked();
+	void on_pushButton_save_clicked();
 	//void on_pushButton_calendar_clicked();
 };

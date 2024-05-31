@@ -26,5 +26,8 @@ private slots:
 	void on_pushButton_confirm_next_page_clicked();
 	void on_pushButton_exit_clicked();
 	void on_pushButton_save_clicked();
+	void on_pushButton_team_clicked();
+	void on_pushButton_go_back_clicked();
+	void on_pushButton_play_clicked();
 	//void on_pushButton_calendar_clicked();
 };

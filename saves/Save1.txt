@@ -8,6 +8,11 @@ Erik Ten Hag
 MUN
 95
 6
+Inter
+Simone Inzaghi
+INT
+95
+6
 Liverpool
 Jurgen Klopp
 LIV
@@ -18,31 +23,11 @@ Marco Rose
 RBL
 95
 4
-Inter
-Simone Inzaghi
-INT
-95
-6
 Milan
 Stefano Pioli
 MIL
 95
 4
-Real Madryt
-Carlo Ancelotti
-RMA
-95
-3
-PSG
-Luis Enrique
-PSG
-95
-3
-Chelsea
-Mauricio Pochettino
-CHE
-95
-2
 Arsenal
 Mikel Arteta
 ARS
@@ -58,9 +43,39 @@ Xabi Alonso
 LEV
 95
 4
+Real Madryt
+Carlo Ancelotti
+RMA
+95
+3
+PSG
+Luis Enrique
+PSG
+95
+3
+Bayern Monachium
+Thomas Tuchel
+BAY
+95
+3
+Napoli
+Francesco Calzona
+NAP
+95
+3
+Chelsea
+Mauricio Pochettino
+CHE
+95
+2
 Juventus
 Paolo Montero
 JUV
+95
+2
+Atletico Madryt
+Diego Simeone
+ATM
 95
 2
 FC Barcelona
@@ -68,26 +83,11 @@ Xavi
 FCB
 95
 1
-Atletico Madryt
-Diego Simeone
-ATM
-95
-2
-Bayern Monachium
-Thomas Tuchel
-BAY
-95
-3
 Borussia Dortmund
 Edin Terzic
 BVB
 95
 1
-Napoli
-Francesco Calzona
-NAP
-95
-3
 AS Monaco
 Adi Hutter
 ASM

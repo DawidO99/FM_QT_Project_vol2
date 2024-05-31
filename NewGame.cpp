@@ -200,7 +200,9 @@ void NewGame::pick_players()
 		save_file << st << std::endl;
 		save_file << st_ovr << std::endl;
 
-		save_file << "$" << std::endl;
+		save_file << '#' << std::endl;
+		save_file << 1 << std::endl;
+		save_file << '$' << std::endl;
 	}
 	save_file.close();
 	std::string my_team_name = "saves/" + ui.textEdit_save_name->toPlainText().toStdString() + "MyTeam.txt";

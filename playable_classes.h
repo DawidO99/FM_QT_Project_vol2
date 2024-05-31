@@ -29,4 +29,3 @@ public:
     std::string get_acronym(Team T);
     int get_overall(Team T);
 };
-

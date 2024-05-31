@@ -13,6 +13,8 @@ public:
 	LoadGame(QWidget *parent = nullptr);
 	~LoadGame();
 	void load_save();
+	void generate_schedule();
+	int week = 1;
 
 private:
 	Ui::LoadGameClass ui;

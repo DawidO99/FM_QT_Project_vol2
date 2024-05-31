@@ -17,10 +17,6 @@ LoadGame::~LoadGame()
 void LoadGame::on_pushButton_schedule_clicked()
 {
 	ui.stackedWidget_content->setCurrentIndex(1);
-	//random tests
-	int possiblepoints[3] = { 0,1,3 };
-	for (int i = 0; i < league.size(); i++)
-		league[i].points += possiblepoints[rand() % 3];
 }
 
 void LoadGame::on_pushButton_exit_clicked()
@@ -30,12 +26,189 @@ void LoadGame::on_pushButton_exit_clicked()
 }
 void LoadGame::on_pushButton_team_clicked()
 {
+	std::string file_name = "saves/" + ui.textEdit_file_name->toPlainText().toStdString() + ".txt";
+	std::ifstream my_team(file_name);
+	std::string line;
+	std::string player;
+	int overall;
+	std::string output;
+	while (my_team.is_open() && my_team.peek() != '$')
+		std::getline(my_team, line);
+	std::getline(my_team, line);
+	while (my_team.is_open() && my_team.peek() != '#')
+	{
+		if (my_team.peek() == '$')
+			break;
+		std::getline(my_team, player);
+		my_team >> overall;
+		output = player + "-" + std::to_string(overall);
+		QString final_output = QString::fromStdString(output);
+		ui.label_goalkeeper->setText(final_output);
+		std::getline(my_team, line);
+
+		if (my_team.peek() == '$')
+			break;
+		std::getline(my_team, player);
+		my_team >> overall;
+		output = player + "-" + std::to_string(overall);
+		final_output = QString::fromStdString(output);
+		ui.label_right_back->setText(final_output);
+		std::getline(my_team, line);
+
+		if (my_team.peek() == '$')
+			break;
+		std::getline(my_team, player);
+		my_team >> overall;
+		output = player + "-" + std::to_string(overall);
+		final_output = QString::fromStdString(output);
+		ui.label_2nd_center_back->setText(final_output);
+		std::getline(my_team, line);
+
+		if (my_team.peek() == '$')
+			break;
+		std::getline(my_team, player);
+		my_team >> overall;
+		output = player + "-" + std::to_string(overall);
+		final_output = QString::fromStdString(output);
+		ui.label_1st_center_back->setText(final_output);
+		std::getline(my_team, line);
+
+		if (my_team.peek() == '$')
+			break;
+		std::getline(my_team, player);
+		my_team >> overall;
+		output = player + "-" + std::to_string(overall);
+		final_output = QString::fromStdString(output);
+		ui.label_left_back->setText(final_output);
+		std::getline(my_team, line);
+
+		if (my_team.peek() == '$')
+			break;
+		std::getline(my_team, player);
+		my_team >> overall;
+		output = player + "-" + std::to_string(overall);
+		final_output = QString::fromStdString(output);
+		ui.label_right_def_midfielder->setText(final_output);
+		std::getline(my_team, line);
+
+		if (my_team.peek() == '$')
+			break;
+		std::getline(my_team, player);
+		my_team >> overall;
+		output = player + "-" + std::to_string(overall);
+		final_output = QString::fromStdString(output);
+		ui.label_left_def_midfielder->setText(final_output);
+		std::getline(my_team, line);
+
+		if (my_team.peek() == '$')
+			break;
+		std::getline(my_team, player);
+		my_team >> overall;
+		output = player + "-" + std::to_string(overall);
+		final_output = QString::fromStdString(output);
+		ui.label_right_forward->setText(final_output);
+		std::getline(my_team, line);
+
+		if (my_team.peek() == '$')
+			break;
+		std::getline(my_team, player);
+		my_team >> overall;
+		output = player + "-" + std::to_string(overall);
+		final_output = QString::fromStdString(output);
+		ui.label_offensive_midfielder->setText(final_output);
+		std::getline(my_team, line);
+
+		if (my_team.peek() == '$')
+			break;
+		std::getline(my_team, player);
+		my_team >> overall;
+		output = player + "-" + std::to_string(overall);
+		final_output = QString::fromStdString(output);
+		ui.label_left_forward->setText(final_output);
+		std::getline(my_team, line);
+
+		if (my_team.peek() == '$')
+			break;
+		std::getline(my_team, player);
+		my_team >> overall;
+		output = player + "-" + std::to_string(overall);
+		final_output = QString::fromStdString(output);
+		ui.label_center_forward->setText(final_output);
+		std::getline(my_team, line);
+	}
+	
 	ui.stackedWidget_content->setCurrentIndex(2);
 }
 
 void LoadGame::on_pushButton_play_clicked()
 {
-	ui.stackedWidget->setCurrentIndex(2);
+	if (week <= 38)
+	{
+		std::string my_team_name = "saves/" + ui.textEdit_file_name->toPlainText().toStdString() + "MyTeam.txt";
+		std::ifstream my_team_file(my_team_name);
+		std::string my_team;
+		std::getline(my_team_file, my_team);
+		my_team_file.close();
+
+		std::string matchday = "files/League_Schedule/Round_" + std::to_string(week);
+		matchday += ".txt";
+		std::ifstream matches(matchday);
+		std::string team1;
+		std::string team2;
+		std::string line;
+		std::string result;
+		int goal1 = 0, goal2 = 0, ind1 = 0, ind2 = 0;
+		int match = 0;
+
+		std::string matchday_label = "Matchay " + std::to_string(week);
+		QStringList headers;
+		headers << QString::fromStdString(matchday_label);
+		ui.tableWidget_matchday->setHorizontalHeaderLabels(headers);
+
+		while (matches.good())
+		{
+			std::getline(matches, team1);
+			if (team1 == "Nasz team")
+				team1 = my_team;
+			std::getline(matches, team2);
+			if (team2 == "Nasz team")
+				team2 = my_team;
+			std::getline(matches, line);
+			for (int i = 0; i < league.size(); i++)
+			{
+				if (league[i].name == team1)
+				{
+					goal1 = (((float)rand() / RAND_MAX) * league[i].get_overall(league[i])) / 15;
+					ind1 = i;
+				}
+				if (league[i].name == team2)
+				{
+					goal2 = (((float)rand() / RAND_MAX) * league[i].get_overall(league[i])) / 15;
+					ind2 = i;
+				}
+			}
+			if (goal1 == goal2)
+			{
+				league[ind1].points++;
+				league[ind2].points++;
+			}
+			else if (goal1 > goal2)
+				league[ind1].points += 3;
+			else
+				league[ind2].points += 3;
+			result = team1 + " " + std::to_string(goal1) + ":" + std::to_string(goal2) + " " + team2;
+			QString qresult = QString::fromStdString(result);
+			QVariant casted(qresult);
+			QTableWidgetItem* item = new QTableWidgetItem();
+			item->setData(Qt::DisplayRole, casted);
+			ui.tableWidget_matchday->setItem(match, 0, item);
+			match++;
+		}
+		week++;
+		ui.stackedWidget->setCurrentIndex(2);
+	}
+	//TODO jakis komunikat o zakonczeniu sezonu
+	
 }
 
 void LoadGame::on_pushButton_go_back_clicked()
@@ -111,6 +284,8 @@ void LoadGame::on_pushButton_save_clicked()
 		num = squad[i].overall;
 		file << num << std::endl;
 	}
+	file << '#' << std::endl;
+	file << week << std::endl;
 	file << '$' << std::endl;
 	file.close();
 }
@@ -137,7 +312,7 @@ void LoadGame::load_save()
 	}
 	//tu jakis except
 	std::getline(load_file, line);
-	while (load_file.is_open() && load_file.peek() != '$')
+	while (load_file.is_open() && load_file.peek() != '#')
 	{
 		std::getline(load_file, player);
 		load_file >> overall;
@@ -146,4 +321,12 @@ void LoadGame::load_save()
 		squad.push_back(P);
 	}
 	//tu jakis except
+
+	std::string original_file = "saves/" + ui.textEdit_file_name->toPlainText().toStdString() + ".txt";
+	std::ifstream which_week(original_file);
+	while (which_week.peek() != '#')
+		std::getline(which_week, line);
+	std::getline(which_week, line);
+	which_week >> week;
+	which_week.close();
 }

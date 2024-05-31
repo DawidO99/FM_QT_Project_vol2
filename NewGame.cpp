@@ -163,12 +163,15 @@ void NewGame::pick_players()
 	int st_ovr = num.toInt();
 	ovr_sum += st_ovr;
 
+	int points = 0;
 	ovr_sum /= 11;
 	std::string file_name = "saves/" + ui.textEdit_save_name->toPlainText().toStdString() + ".txt";
 	std::fstream save_file(file_name, std::ios::app);
 	if (save_file.good())
 	{
 		save_file << ovr_sum;
+		save_file << std::endl;
+		save_file << points;
 		save_file << std::endl;
 		
 		save_file << "$";

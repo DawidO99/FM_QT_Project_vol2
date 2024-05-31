@@ -15,3 +15,16 @@ Team::Team(std::string team_name, std::string manager_name, std::string acronym,
 	this->overall = overall;
 	this->points = points;
 }
+
+std::string Team::get_manager(Team T)
+{
+	return T.manager;
+}
+std::string Team::get_acronym(Team T)
+{
+	return T.acronym;
+}
+int Team::get_overall(Team T)
+{
+	return T.overall;
+}

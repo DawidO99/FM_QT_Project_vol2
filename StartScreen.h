@@ -20,4 +20,5 @@ private:
 private slots:
     void on_pushButton_start_game_clicked();
     void on_pushButton_load_game_clicked();
+    void on_pushButton_exit_clicked();
 };

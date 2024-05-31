@@ -1,6 +1,7 @@
 #include "LoadGame.h"
 #include <QApplication>
 #include <fstream>
+#include <sstream>
 
 
 LoadGame::LoadGame(QWidget *parent): QMainWindow(parent)
@@ -19,6 +20,12 @@ void LoadGame::on_pushButton_schedule_clicked()
 	int possiblepoints[3] = { 0,1,3 };
 	for (int i = 0; i < league.size(); i++)
 		league[i].points += possiblepoints[rand() % 3];
+}
+
+void LoadGame::on_pushButton_exit_clicked()
+{
+	//some shit
+	exit(0);
 }
 
 void LoadGame::on_pushButton_table_clicked()
@@ -61,6 +68,38 @@ void LoadGame::on_pushButton_confirm_next_page_clicked()
 	//jaki except
 }
 
+void LoadGame::on_pushButton_save_clicked()
+{
+	std::string original_file = "saves/" + ui.textEdit_file_name->toPlainText().toStdString() + ".txt";
+	std::fstream file(original_file, std::ios::in | std::ios::out);
+	std::string line;
+	int num;
+	file.clear();
+	for (int i = 0; i < league.size(); i++)
+	{
+		line = league[i].name;
+		file << line << std::endl;
+		line = league[i].get_manager(league[i]);
+		file << line << std::endl;
+		line = league[i].get_acronym(league[i]);
+		file << line << std::endl;
+		num = league[i].get_overall(league[i]);
+		file << num << std::endl;
+		num = league[i].points;
+		file << num << std::endl;
+	}
+	file << '$' << std::endl;
+	for (int i = 0; i < squad.size(); i++)
+	{
+		line = squad[i].name;
+		file << line << std::endl;
+		num = squad[i].overall;
+		file << num << std::endl;
+	}
+	file << '$' << std::endl;
+	file.close();
+}
+
 void LoadGame::load_save()
 {
 	std::string file_name = "saves/" + ui.textEdit_file_name->toPlainText().toStdString() + ".txt";
@@ -68,7 +107,7 @@ void LoadGame::load_save()
 	std::fstream load_file(file_name, std::ios::in);
 
 	std::string player, team, acronym, line;
-	int overall;
+	int overall, points;
 	while(load_file.is_open() && load_file.peek() != '$')
 	{
 		std::getline(load_file, team);
@@ -76,7 +115,9 @@ void LoadGame::load_save()
 		std::getline(load_file, acronym);
 		load_file >> overall;
 		std::getline(load_file, line);
-		Team T(team, player, acronym, overall, 0);
+		load_file >> points;
+		std::getline(load_file, line);
+		Team T(team, player, acronym, overall, points);
 		league.push_back(T);
 	}
 	//tu jakis except

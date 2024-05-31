@@ -19,3 +19,8 @@ void StartScreen::on_pushButton_load_game_clicked()
 {
     ui.stackedWidget_start_screen->setCurrentIndex(2);
 }
+
+void StartScreen::on_pushButton_exit_clicked()
+{
+    exit(0);
+}

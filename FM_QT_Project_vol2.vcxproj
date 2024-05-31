@@ -93,6 +93,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <QtRcc Include="LoadGame.qrc" />
     <QtRcc Include="NewGame.qrc" />
     <QtRcc Include="StartScreen.qrc" />
     <QtUic Include="LoadGame.ui" />

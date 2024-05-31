@@ -27,6 +27,10 @@ void LoadGame::on_pushButton_exit_clicked()
 	//some shit
 	exit(0);
 }
+void LoadGame::on_pushButton_team_clicked()
+{
+	ui.stackedWidget_content->setCurrentIndex(2);
+}
 
 void LoadGame::on_pushButton_table_clicked()
 {

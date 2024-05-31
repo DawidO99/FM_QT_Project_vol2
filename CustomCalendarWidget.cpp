@@ -1,6 +1,5 @@
 #include "CustomCalendarWidget.h"
-CustomCalendarWidget::CustomCalendarWidget(QWidget *parent)
-	: QCalendarWidget(parent)
+CustomCalendarWidget::CustomCalendarWidget(QWidget *parent): QCalendarWidget(parent)
 {}
 
 CustomCalendarWidget::~CustomCalendarWidget()
@@ -15,4 +14,9 @@ void CustomCalendarWidget::paintCell(QPainter* painter, const QRect& rect, const
         painter->setPen(Qt::blue);
         painter->drawText(rect, Qt::AlignCenter, "X"); // Przyk³ad: rysowanie tekstu "X" w œrodku komórki
         painter->restore();
+
+        if (date.day()==20) 
+        {
+            painter->drawImage(rect.x(), rect.y(), QImage("images/matchday.jpg"));
+        }
 }

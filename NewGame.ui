@@ -217,17 +217,17 @@
                     <widget class="QComboBox" name="comboBox_center_forward">
                      <item>
                       <property name="text">
-                       <string>Kamil Zdun</string>
+                       <string>Kamil Zdun-87</string>
                       </property>
                      </item>
                      <item>
                       <property name="text">
-                       <string>Damian Wąsik</string>
+                       <string>Damian Wąsik-85</string>
                       </property>
                      </item>
                      <item>
                       <property name="text">
-                       <string>Cezary Baryka</string>
+                       <string>Cezary Baryka-81</string>
                       </property>
                      </item>
                      <item>
@@ -255,13 +255,61 @@
                  <item>
                   <layout class="QHBoxLayout" name="horizontalLayout_4">
                    <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                    <widget class="QComboBox" name="comboBox_left_forward"/>
+                    <widget class="QComboBox" name="comboBox_left_forward">
+                     <item>
+                      <property name="text">
+                       <string>Cristiano Ronaldo-99</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Neymar Jr-90</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Heun Min Son-90</string>
+                      </property>
+                     </item>
+                    </widget>
                    </item>
                    <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                    <widget class="QComboBox" name="comboBox_offensive_midfielder"/>
+                    <widget class="QComboBox" name="comboBox_offensive_midfielder">
+                     <item>
+                      <property name="text">
+                       <string>Lionel Messi-98</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Mesut Ozil-90</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Wissam Ben Yedder-99</string>
+                      </property>
+                     </item>
+                    </widget>
                    </item>
                    <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                    <widget class="QComboBox" name="comboBox_right_forward"/>
+                    <widget class="QComboBox" name="comboBox_right_forward">
+                     <item>
+                      <property name="text">
+                       <string>Jakub Błaszczykowski-99</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Anthony-5</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Bukayo Saka-90</string>
+                      </property>
+                     </item>
+                    </widget>
                    </item>
                   </layout>
                  </item>
@@ -281,10 +329,42 @@
                  <item>
                   <layout class="QHBoxLayout" name="horizontalLayout_5">
                    <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                    <widget class="QComboBox" name="comboBox_defensive_midfielder_1"/>
+                    <widget class="QComboBox" name="comboBox_defensive_midfielder_1">
+                     <item>
+                      <property name="text">
+                       <string>Luka Modric-90</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Jorghinio-80</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Tom hateley-60</string>
+                      </property>
+                     </item>
+                    </widget>
                    </item>
                    <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                    <widget class="QComboBox" name="comboBox_defensive_midfielder_2"/>
+                    <widget class="QComboBox" name="comboBox_defensive_midfielder_2">
+                     <item>
+                      <property name="text">
+                       <string>Grzegorz Krychowiak-99</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Toni Kroos-90</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Blaise Matuidi-80</string>
+                      </property>
+                     </item>
+                    </widget>
                    </item>
                   </layout>
                  </item>
@@ -304,16 +384,80 @@
                  <item>
                   <layout class="QHBoxLayout" name="horizontalLayout_6">
                    <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                    <widget class="QComboBox" name="comboBox_left_back"/>
+                    <widget class="QComboBox" name="comboBox_left_back">
+                     <item>
+                      <property name="text">
+                       <string>Marcelo-90</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Tymoteusz Puchacz-99</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Arkadiusz Reca-99</string>
+                      </property>
+                     </item>
+                    </widget>
                    </item>
                    <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                    <widget class="QComboBox" name="comboBox_center_back_1"/>
+                    <widget class="QComboBox" name="comboBox_center_back_1">
+                     <item>
+                      <property name="text">
+                       <string>David Alaba-85</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Virgil Van Dijk-96</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Michał Pazdan-99</string>
+                      </property>
+                     </item>
+                    </widget>
                    </item>
                    <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                    <widget class="QComboBox" name="comboBox_center_back_2"/>
+                    <widget class="QComboBox" name="comboBox_center_back_2">
+                     <item>
+                      <property name="text">
+                       <string>Sergio Ramos-95</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Cristian Romero-10</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Pique-80</string>
+                      </property>
+                     </item>
+                    </widget>
                    </item>
                    <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                    <widget class="QComboBox" name="comboBox_right_back"/>
+                    <widget class="QComboBox" name="comboBox_right_back">
+                     <item>
+                      <property name="text">
+                       <string>Łukasz Piszczek-90</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Dani Alves-88</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Arkadiusz Pyrka-60</string>
+                      </property>
+                     </item>
+                    </widget>
                    </item>
                   </layout>
                  </item>
@@ -333,7 +477,23 @@
                  <item>
                   <layout class="QHBoxLayout" name="horizontalLayout_7">
                    <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                    <widget class="QComboBox" name="comboBox_goalkeeper"/>
+                    <widget class="QComboBox" name="comboBox_goalkeeper">
+                     <item>
+                      <property name="text">
+                       <string>Dawid Ochman-95</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Jakub Szmatula-80</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Jan Nowak-79</string>
+                      </property>
+                     </item>
+                    </widget>
                    </item>
                   </layout>
                  </item>

@@ -214,6 +214,7 @@ void LoadGame::on_pushButton_play_clicked()
 void LoadGame::on_pushButton_go_back_clicked()
 {
 	ui.stackedWidget->setCurrentIndex(1);
+	ui.stackedWidget_content->setCurrentIndex(2);
 }
 
 void LoadGame::on_pushButton_table_clicked()

@@ -2,6 +2,7 @@
 #include <QApplication>
 #include <fstream>
 #include <sstream>
+#include <cmath>
 
 
 LoadGame::LoadGame(QWidget *parent): QMainWindow(parent)
@@ -9,6 +10,7 @@ LoadGame::LoadGame(QWidget *parent): QMainWindow(parent)
 	ui.setupUi(this);
 	ui.stackedWidget->setCurrentIndex(0);
 	ui.stackedWidget_content->setCurrentIndex(3);
+	srand(time(NULL));
 }
 
 LoadGame::~LoadGame()

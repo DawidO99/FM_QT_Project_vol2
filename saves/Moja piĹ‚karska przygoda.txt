@@ -2,102 +2,102 @@ Manchester City
 Pep Guardiola
 MCI
 95
-30
-Napoli
-Francesco Calzona
-NAP
-95
-24
-Bayern Monachium
-Thomas Tuchel
-BAY
-95
-24
-RB Lipsk
-Marco Rose
-RBL
-95
-24
+51
 Tottenham
 Ange Postecoglou
 TOT
 95
-22
-Real Madryt
-Carlo Ancelotti
-RMA
+43
+RB Lipsk
+Marco Rose
+RBL
 95
-20
-Bayer Leverkusen
-Xabi Alonso
-LEV
+42
+Napoli
+Francesco Calzona
+NAP
 95
-20
-AS Monaco
-Adi Hutter
-ASM
+38
+Bayern Monachium
+Thomas Tuchel
+BAY
 95
-18
+30
 Atletico Madryt
 Diego Simeone
 ATM
 95
-17
+30
 Arsenal
 Mikel Arteta
 ARS
 95
-15
+29
+AS Monaco
+Adi Hutter
+ASM
+95
+28
 Juventus
 Paolo Montero
 JUV
 95
-15
+27
 FC Barcelona
 Xavi
 FCB
 95
-14
+27
 Liverpool
 Jurgen Klopp
 LIV
 95
-13
-Inter
-Simone Inzaghi
-INT
+26
+Bayer Leverkusen
+Xabi Alonso
+LEV
 95
-13
-Chelsea
-Mauricio Pochettino
-CHE
+24
+Real Madryt
+Carlo Ancelotti
+RMA
 95
-13
+23
 PSG
 Luis Enrique
 PSG
 95
-12
-Borussia Dortmund
-Edin Terzic
-BVB
-95
-12
-Piast Gliwice
-Dawid Ochman
-GKS
-89
-9
-Milan
-Stefano Pioli
-MIL
-95
-8
+23
 Manchester United
 Erik Ten Hag
 MUN
 95
-7
+23
+Inter
+Simone Inzaghi
+INT
+95
+22
+Chelsea
+Mauricio Pochettino
+CHE
+95
+22
+Borussia Dortmund
+Edin Terzic
+BVB
+95
+22
+Milan
+Stefano Pioli
+MIL
+95
+17
+Piast Gliwice
+Dawid Ochman
+GKS
+89
+11
 $
 Jan Nowak
 79
@@ -122,5 +122,5 @@ Neymar Jr
 Damian Wąsik
 85
 #
-13
+21
 $

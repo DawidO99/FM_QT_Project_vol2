@@ -7,9 +7,7 @@
 #include <fstream>
 #include <filesystem>
 
-
-NewGame::NewGame(QWidget *parent)
-	: QMainWindow(parent)
+NewGame::NewGame(QWidget *parent): QMainWindow(parent)
 {
 	ui.setupUi(this);
 	ui.stackedWidget->setCurrentIndex(0);
@@ -62,12 +60,47 @@ bool NewGame::eventFilter(QObject* obj, QEvent* event)
 void NewGame::on_pushButton_confirm_next_page_clicked()
 {
 	std::string file_name = "saves/" + ui.textEdit_save_name->toPlainText().toStdString() + ".txt";
+	QString if_empty = ui.textEdit_save_name->toPlainText();
+	if (if_empty.isEmpty())
+	{
+		QMessageBox msgBox;
+		msgBox.setIcon(QMessageBox::Warning);
+		msgBox.setWindowTitle("Save name error");
+		msgBox.setText("Save name cannot be empty.");
+		msgBox.setInformativeText("Please, choose a different save name.");
+		msgBox.setStandardButtons(QMessageBox::Ok);
+		msgBox.setDefaultButton(QMessageBox::Ok);
+		msgBox.setStyleSheet(
+			"QMessageBox { background-color: #32CD32; border: 1px solid #228B22; }"
+			"QLabel { color: white; }"
+			"QPushButton { background-color: #32CD32; color:white; border: none; padding: 5px 10px; }"
+			"QPushButton:hover { background-color: #228B22; }"
+		);
+		msgBox.exec();
+		return;
+	}
 	if (!std::filesystem::exists(file_name))
 	{
 		make_save();
 		ui.stackedWidget->setCurrentIndex(1);
 	}
-	//except : taki plik juz istnieje
+	else
+	{
+		QMessageBox msgBox;
+		msgBox.setIcon(QMessageBox::Warning);
+		msgBox.setWindowTitle("Save error");
+		msgBox.setText("Such a file already exists");
+		msgBox.setInformativeText("Please, choose a different save name.");
+		msgBox.setStandardButtons(QMessageBox::Ok);
+		msgBox.setDefaultButton(QMessageBox::Ok);
+		msgBox.setStyleSheet(
+			"QMessageBox { background-color: #32CD32; border: 1px solid #228B22; }"
+			"QLabel { color: white; }"
+			"QPushButton { background-color: #32CD32; color:white; border: none; padding: 5px 10px; }"
+			"QPushButton:hover { background-color: #228B22; }"
+		);
+		msgBox.exec();
+	}
 }
 
 void NewGame::on_pushButton_confirm_into_load_game_clicked()
@@ -90,12 +123,46 @@ void NewGame::make_save()
 		while (std::getline(teams_file, line))
 			save_file << line << std::endl;
 	}
+	else
+	{
+		QMessageBox msgBox;
+		msgBox.setIcon(QMessageBox::Warning);
+		msgBox.setWindowTitle("File open error");
+		msgBox.setText("Can't open the file");
+		msgBox.setStandardButtons(QMessageBox::Ok);
+		msgBox.setDefaultButton(QMessageBox::Ok);
+		msgBox.setStyleSheet(
+			"QMessageBox { background-color: #32CD32; border: 1px solid #228B22; }"
+			"QLabel { color: white; }"
+			"QPushButton { background-color: #32CD32; color:white; border: none; padding: 5px 10px; }"
+			"QPushButton:hover { background-color: #228B22; }"
+		);
+		msgBox.exec();
+		exit(0);
+	}
 	teams_file.close();
 	if (save_file.good())
 	{
 		save_file << team_name << std::endl;
 		save_file << player_name << std::endl;
 		save_file << team_acronym << std::endl;
+	}
+	else
+	{
+		QMessageBox msgBox;
+		msgBox.setIcon(QMessageBox::Warning);
+		msgBox.setWindowTitle("File open error");
+		msgBox.setText("Can't open the file");
+		msgBox.setStandardButtons(QMessageBox::Ok);
+		msgBox.setDefaultButton(QMessageBox::Ok);
+		msgBox.setStyleSheet(
+			"QMessageBox { background-color: #32CD32; border: 1px solid #228B22; }"
+			"QLabel { color: white; }"
+			"QPushButton { background-color: #32CD32; color:white; border: none; padding: 5px 10px; }"
+			"QPushButton:hover { background-color: #228B22; }"
+		);
+		msgBox.exec();
+		exit(0);
 	}
 	save_file.close();
 	std::string my_team_name = "saves/" + ui.textEdit_save_name->toPlainText().toStdString() + "MyTeam.txt";
@@ -105,6 +172,23 @@ void NewGame::make_save()
 		my_team << team_name << std::endl;
 		my_team << player_name << std::endl;
 		my_team << team_acronym << std::endl;
+	}
+	else
+	{
+		QMessageBox msgBox;
+		msgBox.setIcon(QMessageBox::Warning);
+		msgBox.setWindowTitle("File open error");
+		msgBox.setText("Can't open the file");
+		msgBox.setStandardButtons(QMessageBox::Ok);
+		msgBox.setDefaultButton(QMessageBox::Ok);
+		msgBox.setStyleSheet(
+			"QMessageBox { background-color: #32CD32; border: 1px solid #228B22; }"
+			"QLabel { color: white; }"
+			"QPushButton { background-color: #32CD32; color:white; border: none; padding: 5px 10px; }"
+			"QPushButton:hover { background-color: #228B22; }"
+		);
+		msgBox.exec();
+		exit(0);
 	}
 	my_team.close();
 }
@@ -241,6 +325,23 @@ void NewGame::pick_players()
 		save_file << '#' << std::endl;
 		save_file << 1 << std::endl;
 		save_file << '$' << std::endl;
+	}
+	else
+	{
+		QMessageBox msgBox;
+		msgBox.setIcon(QMessageBox::Warning);
+		msgBox.setWindowTitle("File open error");
+		msgBox.setText("Can't open the file");
+		msgBox.setStandardButtons(QMessageBox::Ok);
+		msgBox.setDefaultButton(QMessageBox::Ok);
+		msgBox.setStyleSheet(
+			"QMessageBox { background-color: #32CD32; border: 1px solid #228B22; }"
+			"QLabel { color: white; }"
+			"QPushButton { background-color: #32CD32; color:white; border: none; padding: 5px 10px; }"
+			"QPushButton:hover { background-color: #228B22; }"
+		);
+		msgBox.exec();
+		exit(0);
 	}
 	save_file.close();
 	std::string my_team_name = "saves/" + ui.textEdit_save_name->toPlainText().toStdString() + "MyTeam.txt";

@@ -3,6 +3,7 @@
 #include <fstream>
 #include <sstream>
 #include <cmath>
+#include <qmessagebox.h>
 
 
 LoadGame::LoadGame(QWidget *parent): QMainWindow(parent)
@@ -34,6 +35,7 @@ void LoadGame::on_pushButton_team_clicked()
 	std::string player;
 	int overall;
 	std::string output;
+
 	while (my_team.is_open() && my_team.peek() != '$')
 		std::getline(my_team, line);
 	std::getline(my_team, line);
@@ -249,6 +251,25 @@ void LoadGame::on_pushButton_table_clicked()
 
 void LoadGame::on_pushButton_confirm_next_page_clicked()
 {
+	QString if_empty = ui.textEdit_file_name->toPlainText();
+	if (if_empty.isEmpty())
+	{
+		QMessageBox msgBox;
+		msgBox.setIcon(QMessageBox::Warning);
+		msgBox.setWindowTitle("Save name error");
+		msgBox.setText("Save name cannot be empty.");
+		msgBox.setInformativeText("Please, choose a different save name.");
+		msgBox.setStandardButtons(QMessageBox::Ok);
+		msgBox.setDefaultButton(QMessageBox::Ok);
+		msgBox.setStyleSheet(
+			"QMessageBox { background-color: #32CD32; border: 1px solid #228B22; }"
+			"QLabel { color: white; }"
+			"QPushButton { background-color: #32CD32; color:white; border: none; padding: 5px 10px; }"
+			"QPushButton:hover { background-color: #228B22; }"
+		);
+		msgBox.exec();
+		return;
+	}
 	std::string file_name = "saves/" + ui.textEdit_file_name->toPlainText().toStdString() + ".txt";
 	std::ifstream check_file(file_name);
 	if (check_file.good())
@@ -256,7 +277,22 @@ void LoadGame::on_pushButton_confirm_next_page_clicked()
 		load_save();
 		ui.stackedWidget->setCurrentIndex(1);
 	}
-	//jaki except
+	else
+	{
+		QMessageBox msgBox;
+		msgBox.setIcon(QMessageBox::Warning);
+		msgBox.setWindowTitle("File open error");
+		msgBox.setText("Provided save doesn't exist");
+		msgBox.setStandardButtons(QMessageBox::Ok);
+		msgBox.setDefaultButton(QMessageBox::Ok);
+		msgBox.setStyleSheet(
+			"QMessageBox { background-color: #32CD32; border: 1px solid #228B22; }"
+			"QLabel { color: white; }"
+			"QPushButton { background-color: #32CD32; color:white; border: none; padding: 5px 10px; }"
+			"QPushButton:hover { background-color: #228B22; }"
+		);
+		msgBox.exec();
+	}
 }
 
 void LoadGame::on_pushButton_save_clicked()
@@ -296,11 +332,10 @@ void LoadGame::on_pushButton_save_clicked()
 void LoadGame::load_save()
 {
 	std::string file_name = "saves/" + ui.textEdit_file_name->toPlainText().toStdString() + ".txt";
-	//tu chyba tez by sie przydalo cos
 	std::fstream load_file(file_name, std::ios::in);
-
 	std::string player, team, acronym, line;
 	int overall, points;
+
 	while(load_file.is_open() && load_file.peek() != '$')
 	{
 		std::getline(load_file, team);
@@ -313,7 +348,7 @@ void LoadGame::load_save()
 		Team T(team, player, acronym, overall, points);
 		league.push_back(T);
 	}
-	//tu jakis except
+
 	std::getline(load_file, line);
 	while (load_file.is_open() && load_file.peek() != '#')
 	{
@@ -323,7 +358,6 @@ void LoadGame::load_save()
 		Player P(player, overall);
 		squad.push_back(P);
 	}
-	//tu jakis except
 
 	std::string original_file = "saves/" + ui.textEdit_file_name->toPlainText().toStdString() + ".txt";
 	std::ifstream which_week(original_file);

@@ -14,7 +14,6 @@ class NewGame : public QMainWindow
 public:
 	NewGame(QWidget *parent = nullptr);
 	~NewGame();
-	
 	void make_save();
 	void pick_players();
 

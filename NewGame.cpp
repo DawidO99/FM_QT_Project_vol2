@@ -14,12 +14,50 @@ NewGame::NewGame(QWidget *parent)
 	ui.setupUi(this);
 	ui.stackedWidget->setCurrentIndex(0);
 	ui.stackedWidget->addWidget(&LoadGame_class);
+	textEdit_player_name = findChild<QTextEdit*>("textEdit_player_name");
+	textEdit_save_name = findChild<QTextEdit*>("textEdit_save_name");
+	textEdit_team_acronym = findChild<QTextEdit*>("textEdit_team_acronym");
+	textEdit_team_name = findChild<QTextEdit*>("textEdit_team_name");
+
+	textEdit_player_name->installEventFilter(this);
+	textEdit_save_name->installEventFilter(this);
+	textEdit_team_acronym->installEventFilter(this);
+	textEdit_team_name->installEventFilter(this);
 }
 
 NewGame::~NewGame()
 {}
 
 
+bool NewGame::eventFilter(QObject* obj, QEvent* event)
+{
+	// Sprawdzenie, czy zdarzenie to naciœniêcie klawisza
+	if (event->type() == QEvent::KeyPress) {
+		QKeyEvent* keyEvent = static_cast<QKeyEvent*>(event);
+		// Sprawdzenie, czy naciœniêto klawisz Enter
+		if (keyEvent->key() == Qt::Key_Return || keyEvent->key() == Qt::Key_Enter) {
+			// Jeœli naciœniêto Enter w textEdit_player_name, przenieœ focus do textEdit_save_name
+			if (obj == textEdit_save_name) {
+				textEdit_player_name->setFocus();
+				return true; // Zwrócenie true oznacza, ¿e zdarzenie zosta³o obs³u¿one
+			}
+			if (obj == textEdit_player_name) {
+				textEdit_team_name->setFocus();
+				return true; // Zwrócenie true oznacza, ¿e zdarzenie zosta³o obs³u¿one
+			}
+			if (obj == textEdit_team_name) {
+				textEdit_team_acronym->setFocus();
+				return true; // Zwrócenie true oznacza, ¿e zdarzenie zosta³o obs³u¿one
+			}
+			if (obj == textEdit_team_acronym) {
+				textEdit_team_acronym->setFocus();
+				return true; // Zwrócenie true oznacza, ¿e zdarzenie zosta³o obs³u¿one
+			}
+		}
+	}
+	// Przekazanie zdarzenia do standardowego przetwarzania
+	return QMainWindow::eventFilter(obj, event);
+}
 
 void NewGame::on_pushButton_confirm_next_page_clicked()
 {

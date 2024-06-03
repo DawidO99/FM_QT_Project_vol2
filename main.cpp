@@ -8,6 +8,8 @@ int main(int argc, char *argv[])
     app.setApplicationDisplayName("MiniFootballManager");
     StartScreen MainWindow;
     MainWindow.setWindowTitle(app.applicationDisplayName());
+    QIcon appIcon("images/matchday.jpg");
+    MainWindow.setWindowIcon(appIcon);
     MainWindow.show();
     return app.exec();
 }

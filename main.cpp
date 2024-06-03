@@ -4,6 +4,8 @@
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
+   /* app.setApplicationName("MiniFootballManager");
+    app.setApplicationDisplayName("MiniFootballManager");*/
     StartScreen MainWindow;
     MainWindow.show();
     return app.exec();

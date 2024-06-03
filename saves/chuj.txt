@@ -2,25 +2,40 @@ Chelsea
 Mauricio Pochettino
 CHE
 95
-33
-PSG
-Luis Enrique
-PSG
+42
+Bayern Monachium
+Thomas Tuchel
+BAY
 95
-32
+40
 Inter
 Simone Inzaghi
 INT
 95
-32
+38
+Atletico Madryt
+Diego Simeone
+ATM
+95
+38
+PSG
+Luis Enrique
+PSG
+95
+36
+RB Lipsk
+Marco Rose
+RBL
+95
+35
 Napoli
 Francesco Calzona
 NAP
 95
-30
-Bayern Monachium
-Thomas Tuchel
-BAY
+33
+Manchester United
+Erik Ten Hag
+MUN
 95
 31
 Real Madryt
@@ -28,76 +43,61 @@ Carlo Ancelotti
 RMA
 95
 29
-RB Lipsk
-Marco Rose
-RBL
-95
-28
-Atletico Madryt
-Diego Simeone
-ATM
-95
-28
 Liverpool
 Jurgen Klopp
 LIV
 95
-22
-Manchester United
-Erik Ten Hag
-MUN
-95
-25
+28
 Milan
 Stefano Pioli
 MIL
 95
-22
-Arsenal
-Mikel Arteta
-ARS
-95
-21
+28
 Juventus
 Paolo Montero
 JUV
 95
-21
-Bayer Leverkusen
-Xabi Alonso
-LEV
-95
-19
-Tottenham
-Ange Postecoglou
-TOT
-95
-22
+27
 Katastrofa w Nadfiolecie
 Igor Orliński
 KwN
 80
-20
+26
+Bayer Leverkusen
+Xabi Alonso
+LEV
+95
+26
+Tottenham
+Ange Postecoglou
+TOT
+95
+25
+Arsenal
+Mikel Arteta
+ARS
+95
+24
 FC Barcelona
 Xavi
 FCB
 95
-20
+24
 Manchester City
 Pep Guardiola
 MCI
 95
-16
-Borussia Dortmund
-Edin Terzic
-BVB
-95
-15
+23
 AS Monaco
 Adi Hutter
 ASM
 95
-11
+21
+Borussia Dortmund
+Edin Terzic
+BVB
+95
+19
 $
 Jakub Szmatula
 80
@@ -122,5 +122,5 @@ Neymar Jr
 Cezary Baryka
 81
 #
-18
+22
 $

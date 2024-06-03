@@ -20,6 +20,7 @@ LoadGame::~LoadGame()
 void LoadGame::on_pushButton_schedule_clicked()
 {
 	ui.stackedWidget_content->setCurrentIndex(1);
+	ui.label_date->setText("Here you can view the schedule.");
 }
 
 void LoadGame::on_pushButton_exit_clicked()
@@ -140,7 +141,7 @@ void LoadGame::on_pushButton_team_clicked()
 		ui.label_center_forward->setText(final_output);
 		std::getline(my_team, line);
 	}
-	
+	ui.label_date->setText("Here you can view your team.");
 	ui.stackedWidget_content->setCurrentIndex(2);
 }
 
@@ -217,6 +218,7 @@ void LoadGame::on_pushButton_play_clicked()
 
 void LoadGame::on_pushButton_go_back_clicked()
 {
+	ui.label_date->setText("The match is over. That was an intense game!");
 	ui.stackedWidget->setCurrentIndex(1);
 	ui.stackedWidget_content->setCurrentIndex(2);
 }
@@ -230,6 +232,7 @@ void LoadGame::on_pushButton_table_clicked()
 		std::getline(my_team, my_name);
 	my_team.close();
 	ui.stackedWidget_content->setCurrentIndex(0);
+	ui.label_date->setText("Here you can view the current league standings for your team.");
 	sort(league.begin(), league.end());
 	for (int i = 0; i < league.size(); i++)
 	{
@@ -276,6 +279,7 @@ void LoadGame::on_pushButton_confirm_next_page_clicked()
 	{
 		load_save();
 		ui.stackedWidget->setCurrentIndex(1);
+		ui.label_date->setText("What's up coach?");
 	}
 	else
 	{
@@ -327,6 +331,7 @@ void LoadGame::on_pushButton_save_clicked()
 	file << week << std::endl;
 	file << '$' << std::endl;
 	file.close();
+	ui.label_date->setText("Your game has been saved.");
 }
 
 void LoadGame::load_save()

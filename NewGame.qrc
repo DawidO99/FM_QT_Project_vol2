@@ -1,6 +1,7 @@
 <RCC>
   <qresource prefix="field">
-    <file>images/middleaged-soccer-manager-wearing-a-suit-is-looking-a.jpg</file>
+    <file>images/empty-soccer-dressign-room-with-white-board-in-the-ba.jpg</file>
+    <file>images/middleaged-soccer-manager-wearing-a-suit-is-looking-a.png</file>
     <file>images/soccer_field.png</file>
   </qresource>
 </RCC>

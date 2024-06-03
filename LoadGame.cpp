@@ -10,18 +10,12 @@ LoadGame::LoadGame(QWidget *parent): QMainWindow(parent)
 {
 	ui.setupUi(this);
 	ui.stackedWidget->setCurrentIndex(0);
-	ui.stackedWidget_content->setCurrentIndex(3);
+	ui.stackedWidget_content->setCurrentIndex(2);
 	srand(time(NULL));
 }
 
 LoadGame::~LoadGame()
 {}
-
-void LoadGame::on_pushButton_schedule_clicked()
-{
-	ui.stackedWidget_content->setCurrentIndex(1);
-	ui.label_date->setText("Here you can view the schedule.");
-}
 
 void LoadGame::on_pushButton_exit_clicked()
 {
@@ -142,7 +136,7 @@ void LoadGame::on_pushButton_team_clicked()
 		std::getline(my_team, line);
 	}
 	ui.label_date->setText("Here you can view your team.");
-	ui.stackedWidget_content->setCurrentIndex(2);
+	ui.stackedWidget_content->setCurrentIndex(1);
 }
 
 void LoadGame::on_pushButton_play_clicked()
@@ -251,7 +245,7 @@ void LoadGame::on_pushButton_table_clicked()
 		std::getline(my_team, my_name);
 	my_team.close();
 	ui.stackedWidget_content->setCurrentIndex(0);
-	ui.label_date->setText("Here you can view the current league standings for your team.");
+	ui.label_date->setText("Current league standings.");
 	sort(league.begin(), league.end());
 	for (int i = 0; i < league.size(); i++)
 	{

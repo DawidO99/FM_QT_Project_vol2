@@ -1,0 +1,126 @@
+Manchester City
+Pep Guardiola
+MCI
+95
+0
+Manchester United
+Erik Ten Hag
+MUN
+76
+0
+Chelsea
+Mauricio Pochettino
+CHE
+80
+0
+Arsenal
+Mikel Arteta
+ARS
+92
+0
+Liverpool
+Jurgen Klopp
+LIV
+90
+0
+Tottenham
+Ange Postecoglou
+TOT
+85
+0
+Bayern Monachium
+Thomas Tuchel
+BAY
+91
+0
+Borussia Dortmund
+Edin Terzic
+BVB
+86
+0
+Bayer Leverkusen
+Xabi Alonso
+LEV
+93
+0
+RB Lipsk
+Marco Rose
+RBL
+80
+0
+Inter
+Simone Inzaghi
+INT
+87
+0
+Milan
+Stefano Pioli
+MIL
+84
+0
+Juventus
+Paolo Montero
+JUV
+81
+0
+Napoli
+Francesco Calzona
+NAP
+74
+0
+FC Barcelona
+Xavi
+FCB
+86
+0
+Real Madryt
+Carlo Ancelotti
+RMA
+95
+0
+Atletico Madryt
+Diego Simeone
+ATM
+90
+0
+PSG
+Luis Enrique
+PSG
+88
+0
+AS Monaco
+Adi Hutter
+ASM
+77
+0
+KS Bojków
+Dawid
+KSB
+85
+0
+$
+Łukasz Skorupski
+83
+Matty Cash
+80
+Sergio Ramos
+95
+Kalidou Koulibaly
+88
+Alex Telles
+85
+Grzegorz Krychowiak
+78
+Nemanja Matic
+80
+Anthony Gordon
+87
+Lionel Messi
+99
+Lucas Ocampos
+82
+Mauro Icardi
+83
+#
+1
+$

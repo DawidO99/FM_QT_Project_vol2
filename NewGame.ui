@@ -36,7 +36,7 @@
        <number>0</number>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="page_create_team">
        <property name="styleSheet">
@@ -386,17 +386,27 @@ color: rgb(255, 255, 255);
                     <widget class="QComboBox" name="comboBox_center_forward">
                      <item>
                       <property name="text">
-                       <string>Kamil Zdun-87</string>
+                       <string>Cristiano Ronaldo-99</string>
                       </property>
                      </item>
                      <item>
                       <property name="text">
-                       <string>Damian Wąsik-85</string>
+                       <string>Krzysztof Piątek-85</string>
                       </property>
                      </item>
                      <item>
                       <property name="text">
-                       <string>Cezary Baryka-81</string>
+                       <string>Ciro Immobile-88</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Jamie Vardy-85</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Mauro Icardi-83</string>
                       </property>
                      </item>
                      <item>
@@ -427,7 +437,7 @@ color: rgb(255, 255, 255);
                     <widget class="QComboBox" name="comboBox_left_forward">
                      <item>
                       <property name="text">
-                       <string>Cristiano Ronaldo-99</string>
+                       <string>Dusan Tadic-85</string>
                       </property>
                      </item>
                      <item>
@@ -437,7 +447,17 @@ color: rgb(255, 255, 255);
                      </item>
                      <item>
                       <property name="text">
-                       <string>Heun Min Son-90</string>
+                       <string>Sadio Mane-86</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Lucas Ocampos-82</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Lorenzo Insigne-87</string>
                       </property>
                      </item>
                     </widget>
@@ -446,17 +466,27 @@ color: rgb(255, 255, 255);
                     <widget class="QComboBox" name="comboBox_offensive_midfielder">
                      <item>
                       <property name="text">
-                       <string>Lionel Messi-98</string>
+                       <string>Lionel Messi-99</string>
                       </property>
                      </item>
                      <item>
                       <property name="text">
-                       <string>Mesut Ozil-90</string>
+                       <string>Mesut Ozil-94</string>
                       </property>
                      </item>
                      <item>
                       <property name="text">
-                       <string>Wissam Ben Yedder-99</string>
+                       <string>Marco Veratti-86</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Bruno Guimaraes-88</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Wissam Ben Yedder-90</string>
                       </property>
                      </item>
                     </widget>
@@ -465,17 +495,27 @@ color: rgb(255, 255, 255);
                     <widget class="QComboBox" name="comboBox_right_forward">
                      <item>
                       <property name="text">
-                       <string>Jakub Błaszczykowski-99</string>
+                       <string>Anthony Gordon-87</string>
                       </property>
                      </item>
                      <item>
                       <property name="text">
-                       <string>Anthony-5</string>
+                       <string>Takefusa Kubo-85</string>
                       </property>
                      </item>
                      <item>
                       <property name="text">
-                       <string>Bukayo Saka-90</string>
+                       <string>Angel Di Maria-90</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Riyad Mahrez-86</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Mikel Oyarzabal-84</string>
                       </property>
                      </item>
                     </widget>
@@ -501,17 +541,27 @@ color: rgb(255, 255, 255);
                     <widget class="QComboBox" name="comboBox_defensive_midfielder_1">
                      <item>
                       <property name="text">
-                       <string>Luka Modric-90</string>
+                       <string>Nemanja Matic-80</string>
                       </property>
                      </item>
                      <item>
                       <property name="text">
-                       <string>Jorghinio-80</string>
+                       <string>Fabinho-85</string>
                       </property>
                      </item>
                      <item>
                       <property name="text">
-                       <string>Tom hateley-60</string>
+                       <string>Parejo-87</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Ruben Neves-84</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Marcelo Brozovic-83</string>
                       </property>
                      </item>
                     </widget>
@@ -520,17 +570,27 @@ color: rgb(255, 255, 255);
                     <widget class="QComboBox" name="comboBox_defensive_midfielder_2">
                      <item>
                       <property name="text">
-                       <string>Grzegorz Krychowiak-99</string>
+                       <string>Grzegorz Krychowiak-78</string>
                       </property>
                      </item>
                      <item>
                       <property name="text">
-                       <string>Toni Kroos-90</string>
+                       <string>N'Golo Kante-90</string>
                       </property>
                      </item>
                      <item>
                       <property name="text">
-                       <string>Blaise Matuidi-80</string>
+                       <string>Paul Pogba-85</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Sandro Tonali-86</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Blaise Matuidi-85</string>
                       </property>
                      </item>
                     </widget>
@@ -556,7 +616,17 @@ color: rgb(255, 255, 255);
                     <widget class="QComboBox" name="comboBox_left_back">
                      <item>
                       <property name="text">
-                       <string>Marcelo-90</string>
+                       <string>Alex Telles-85</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Grimlado-85</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Marcos Acuna-83</string>
                       </property>
                      </item>
                      <item>
@@ -566,7 +636,7 @@ color: rgb(255, 255, 255);
                      </item>
                      <item>
                       <property name="text">
-                       <string>Arkadiusz Reca-99</string>
+                       <string>Lucas Digne-80</string>
                       </property>
                      </item>
                     </widget>
@@ -575,12 +645,22 @@ color: rgb(255, 255, 255);
                     <widget class="QComboBox" name="comboBox_center_back_1">
                      <item>
                       <property name="text">
-                       <string>David Alaba-85</string>
+                       <string>Kalidou Koulibaly-88</string>
                       </property>
                      </item>
                      <item>
                       <property name="text">
-                       <string>Virgil Van Dijk-96</string>
+                       <string>Aymeric Laporte-85</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Leonardo Bonucci-90</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Giorgio Chiellini-89</string>
                       </property>
                      </item>
                      <item>
@@ -599,12 +679,22 @@ color: rgb(255, 255, 255);
                      </item>
                      <item>
                       <property name="text">
-                       <string>Cristian Romero-10</string>
+                       <string>Kamil Glik-85</string>
                       </property>
                      </item>
                      <item>
                       <property name="text">
-                       <string>Pique-80</string>
+                       <string>Pique-85</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Sven Botman-86</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Fabian Schar-83</string>
                       </property>
                      </item>
                     </widget>
@@ -613,17 +703,27 @@ color: rgb(255, 255, 255);
                     <widget class="QComboBox" name="comboBox_right_back">
                      <item>
                       <property name="text">
-                       <string>Łukasz Piszczek-90</string>
+                       <string>Matty Cash-80</string>
                       </property>
                      </item>
                      <item>
                       <property name="text">
-                       <string>Dani Alves-88</string>
+                       <string>Kieran Trippier-86</string>
                       </property>
                      </item>
                      <item>
                       <property name="text">
-                       <string>Arkadiusz Pyrka-60</string>
+                       <string>Thomas Meunier-83</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Jesus Navas-82</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Dani Alves-84</string>
                       </property>
                      </item>
                     </widget>
@@ -649,17 +749,27 @@ color: rgb(255, 255, 255);
                     <widget class="QComboBox" name="comboBox_goalkeeper">
                      <item>
                       <property name="text">
-                       <string>Dawid Ochman-95</string>
+                       <string>Emilliano Martinez-85</string>
                       </property>
                      </item>
                      <item>
                       <property name="text">
-                       <string>Jakub Szmatula-80</string>
+                       <string>Łukasz Skorupski-83</string>
                       </property>
                      </item>
                      <item>
                       <property name="text">
-                       <string>Jan Nowak-79</string>
+                       <string>Nick Pope-84</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Kamil Grabara-82</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Jordan Pickford-84</string>
                       </property>
                      </item>
                     </widget>

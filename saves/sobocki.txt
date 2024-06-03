@@ -2,77 +2,77 @@ Manchester City
 Pep Guardiola
 MCI
 95
-0
+3
 Manchester United
 Erik Ten Hag
 MUN
-76
-0
+95
+1
 Chelsea
 Mauricio Pochettino
 CHE
-80
+95
 0
 Arsenal
 Mikel Arteta
 ARS
-92
+95
 0
 Liverpool
 Jurgen Klopp
 LIV
-90
-0
+95
+3
 Tottenham
 Ange Postecoglou
 TOT
-85
-0
+95
+3
 Bayern Monachium
 Thomas Tuchel
 BAY
-91
-0
+95
+1
 Borussia Dortmund
 Edin Terzic
 BVB
-86
-0
+95
+1
 Bayer Leverkusen
 Xabi Alonso
 LEV
-93
-0
+95
+3
 RB Lipsk
 Marco Rose
 RBL
-80
+95
 0
 Inter
 Simone Inzaghi
 INT
-87
-0
+95
+1
 Milan
 Stefano Pioli
 MIL
-84
-0
+95
+3
 Juventus
 Paolo Montero
 JUV
-81
+95
 0
 Napoli
 Francesco Calzona
 NAP
-74
+95
 0
 FC Barcelona
 Xavi
 FCB
-86
-0
+95
+3
 Real Madryt
 Carlo Ancelotti
 RMA
@@ -81,15 +81,46 @@ RMA
 Atletico Madryt
 Diego Simeone
 ATM
-90
-0
+95
+1
 PSG
 Luis Enrique
 PSG
-88
-0
+95
+3
 AS Monaco
 Adi Hutter
 ASM
-77
+95
 0
+ASDFG
+ASDFG
+ASD
+92
+1
+$
+Dawid Ochman
+95
+Łukasz Piszczek
+90
+Sergio Ramos
+95
+David Alaba
+85
+Marcelo
+90
+Grzegorz Krychowiak
+99
+Luka Modric
+90
+Jakub Błaszczykowski
+99
+Lionel Messi
+98
+Cristiano Ronaldo
+99
+Cezary Baryka
+81
+#
+2
+$

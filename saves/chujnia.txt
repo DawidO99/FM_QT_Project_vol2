@@ -93,3 +93,34 @@ Adi Hutter
 ASM
 77
 0
+
+
+
+87
+0
+$
+Emilliano Martinez
+85
+Matty Cash
+80
+Sergio Ramos
+95
+Leonardo Bonucci
+90
+Alex Telles
+85
+Grzegorz Krychowiak
+78
+Nemanja Matic
+80
+Anthony Gordon
+87
+Lionel Messi
+99
+Dusan Tadic
+85
+Cristiano Ronaldo
+99
+#
+1
+$

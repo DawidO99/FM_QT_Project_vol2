@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1047</width>
+    <width>1186</width>
     <height>892</height>
    </rect>
   </property>
@@ -41,7 +41,7 @@
       <widget class="QWidget" name="page_create_team">
        <property name="styleSheet">
         <string notr="true">#page_create_team{
-background-image: url(:/field/images/middleaged-soccer-manager-wearing-a-suit-is-looking-a.jpg);
+	background-image: url(:/field/images/middleaged-soccer-manager-wearing-a-suit-is-looking-a.png);
 background-position: center;
 }</string>
        </property>
@@ -62,7 +62,7 @@ background-position: center;
           </property>
          </spacer>
         </item>
-        <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignVCenter">
+        <item alignment="Qt::AlignmentFlag::AlignHCenter">
          <widget class="QFrame" name="frame_2">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -72,17 +72,19 @@ background-position: center;
           </property>
           <property name="styleSheet">
            <string notr="true">#frame_2 {
-    background-color: rgb(106, 106, 106);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
     border-radius: 20px;        /* Promień zaokrąglenia */
     padding: 10px;              /* Wewnętrzne marginesy */
-    border: 10px solid rgb(48, 48, 48);  /* Grubość, styl i kolor ramki */
+    border: 2px solid rgb(42, 42, 42);  /* Grubość, styl i kolor ramki */
+	
+
 }</string>
           </property>
           <property name="frameShape">
-           <enum>QFrame::Shape::StyledPanel</enum>
+           <enum>QFrame::Shape::NoFrame</enum>
           </property>
           <property name="frameShadow">
-           <enum>QFrame::Shadow::Plain</enum>
+           <enum>QFrame::Shadow::Raised</enum>
           </property>
           <property name="lineWidth">
            <number>20</number>
@@ -98,7 +100,11 @@ background-position: center;
              </property>
              <property name="styleSheet">
               <string notr="true">font: 600 italic 10pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
+color: rgb(255, 255, 255);
+
+border-radius: 5px;        /* Promień zaokrąglenia */
+    padding: 1px;              /* Wewnętrzne marginesy */
+</string>
              </property>
              <property name="text">
               <string>Enter your save name</string>
@@ -154,7 +160,10 @@ font: 600 italic 10pt &quot;Segoe UI&quot;;
             <widget class="QLabel" name="label">
              <property name="styleSheet">
               <string notr="true">font: 600 italic 10pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
+color: rgb(255, 255, 255);
+
+border-radius: 5px;        /* Promień zaokrąglenia */
+    padding: 1px;              /* Wewnętrzne marginesy */</string>
              </property>
              <property name="text">
               <string>Enter your name</string>
@@ -185,7 +194,10 @@ font: 600 italic 10pt &quot;Segoe UI&quot;;</string>
             <widget class="QLabel" name="label_3">
              <property name="styleSheet">
               <string notr="true">font: 600 italic 10pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
+color: rgb(255, 255, 255);
+
+border-radius: 5px;        /* Promień zaokrąglenia */
+    padding: 1px;              /* Wewnętrzne marginesy */</string>
              </property>
              <property name="text">
               <string>Enter your team name</string>
@@ -217,7 +229,10 @@ font: 600 italic 10pt &quot;Segoe UI&quot;;
             <widget class="QLabel" name="label_4">
              <property name="styleSheet">
               <string notr="true">font: 600 italic 10pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
+color: rgb(255, 255, 255);
+
+border-radius: 5px;        /* Promień zaokrąglenia */
+    padding: 1px;              /* Wewnętrzne marginesy */</string>
              </property>
              <property name="text">
               <string>Enter your team acronym(3 letters):</string>
@@ -248,12 +263,17 @@ font: 600 italic 10pt &quot;Segoe UI&quot;;
            <item>
             <widget class="QPushButton" name="pushButton_confirm_next_page">
              <property name="styleSheet">
-              <string notr="true">background-color:rgb(48, 48, 48);
+              <string notr="true">QPushButton{
+background-color:rgb(48, 48, 48);
     border-radius: 15px;        /* Promień zaokrąglenia */
     padding: 10px;              /* Wewnętrzne marginesy */
 font: 600 italic 10pt &quot;Segoe UI&quot;;
 color: rgb(255, 255, 255);
-</string>
+border: 2px solid rgb(42, 42, 42);
+}
+QPushButton:hover {
+	background-color: rgb(29, 29, 29);
+}</string>
              </property>
              <property name="text">
               <string>Confirm</string>
@@ -279,37 +299,62 @@ color: rgb(255, 255, 255);
        </layout>
       </widget>
       <widget class="QWidget" name="page_pick_players">
+       <property name="styleSheet">
+        <string notr="true">#page_pick_players{
+	
+	
+	
+	background-image: url(:/field/images/empty-soccer-dressign-room-with-white-board-in-the-ba.jpg);
+}</string>
+       </property>
        <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0">
         <item>
          <widget class="QFrame" name="frame">
           <property name="frameShape">
-           <enum>QFrame::Shape::StyledPanel</enum>
+           <enum>QFrame::Shape::NoFrame</enum>
           </property>
           <property name="frameShadow">
-           <enum>QFrame::Shadow::Raised</enum>
+           <enum>QFrame::Shadow::Plain</enum>
           </property>
-          <layout class="QVBoxLayout" name="verticalLayout_4" stretch="1,6">
+          <layout class="QVBoxLayout" name="verticalLayout_4" stretch="0,6">
            <property name="sizeConstraint">
             <enum>QLayout::SizeConstraint::SetMinimumSize</enum>
            </property>
            <item>
             <widget class="QFrame" name="frame_heading">
              <property name="frameShape">
-              <enum>QFrame::Shape::StyledPanel</enum>
+              <enum>QFrame::Shape::NoFrame</enum>
              </property>
              <property name="frameShadow">
-              <enum>QFrame::Shadow::Raised</enum>
+              <enum>QFrame::Shadow::Plain</enum>
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_8" stretch="5,1">
               <item>
                <widget class="QLabel" name="label_2">
+                <property name="styleSheet">
+                 <string notr="true">font: 600 italic 50pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+                </property>
                 <property name="text">
-                 <string>Pick your team</string>
+                 <string>     Pick your team</string>
                 </property>
                </widget>
               </item>
               <item>
                <widget class="QPushButton" name="pushButton_confirm_into_load_game">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
+    border-radius: 15px;        /* Promień zaokrąglenia */
+    padding: 10px;              /* Wewnętrzne marginesy */
+font: 600 italic 10pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);
+border: 2px solid rgb(42, 42, 42);
+}
+QPushButton:hover {
+	background-color: rgb(29, 29, 29);
+}</string>
+                </property>
                 <property name="text">
                  <string>Confirm</string>
                 </property>
@@ -321,10 +366,10 @@ color: rgb(255, 255, 255);
            <item>
             <widget class="QFrame" name="frame_idk">
              <property name="frameShape">
-              <enum>QFrame::Shape::StyledPanel</enum>
+              <enum>QFrame::Shape::NoFrame</enum>
              </property>
              <property name="frameShadow">
-              <enum>QFrame::Shadow::Raised</enum>
+              <enum>QFrame::Shadow::Plain</enum>
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_2">
               <item>
@@ -355,13 +400,15 @@ color: rgb(255, 255, 255);
                  </size>
                 </property>
                 <property name="styleSheet">
-                 <string notr="true">image: url(:/field/images/soccer_field.png);</string>
+                 <string notr="true">#frame_field{
+image: url(:/field/images/soccer_field.png);
+}</string>
                 </property>
                 <property name="frameShape">
-                 <enum>QFrame::Shape::StyledPanel</enum>
+                 <enum>QFrame::Shape::NoFrame</enum>
                 </property>
                 <property name="frameShadow">
-                 <enum>QFrame::Shadow::Raised</enum>
+                 <enum>QFrame::Shadow::Plain</enum>
                 </property>
                 <layout class="QVBoxLayout" name="verticalLayout_5" stretch="4,0,4,0,4,0,4,0,4,0,1">
                  <item>
@@ -384,6 +431,20 @@ color: rgb(255, 255, 255);
                   <layout class="QHBoxLayout" name="horizontalLayout_3">
                    <item alignment="Qt::AlignmentFlag::AlignHCenter">
                     <widget class="QComboBox" name="comboBox_center_forward">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
+color: rgb(255, 255, 255);
+	font: 600 italic 10pt &quot;Segoe UI&quot;;
+
+	border-color: rgb(0, 0, 0);
+
+    border-radius: 5px;        /* Promień zaokrąglenia */
+    padding: 1px;              /* Wewnętrzne marginesy */
+	border-color: rgb(0, 0, 0);
+
+
+</string>
+                     </property>
                      <item>
                       <property name="text">
                        <string>Cristiano Ronaldo-99</string>
@@ -435,6 +496,20 @@ color: rgb(255, 255, 255);
                   <layout class="QHBoxLayout" name="horizontalLayout_4">
                    <item alignment="Qt::AlignmentFlag::AlignHCenter">
                     <widget class="QComboBox" name="comboBox_left_forward">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
+color: rgb(255, 255, 255);
+	font: 600 italic 10pt &quot;Segoe UI&quot;;
+
+	border-color: rgb(0, 0, 0);
+
+    border-radius: 5px;        /* Promień zaokrąglenia */
+    padding: 1px;              /* Wewnętrzne marginesy */
+	border-color: rgb(0, 0, 0);
+
+
+</string>
+                     </property>
                      <item>
                       <property name="text">
                        <string>Dusan Tadic-85</string>
@@ -464,6 +539,20 @@ color: rgb(255, 255, 255);
                    </item>
                    <item alignment="Qt::AlignmentFlag::AlignHCenter">
                     <widget class="QComboBox" name="comboBox_offensive_midfielder">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
+color: rgb(255, 255, 255);
+	font: 600 italic 10pt &quot;Segoe UI&quot;;
+
+	border-color: rgb(0, 0, 0);
+
+    border-radius: 5px;        /* Promień zaokrąglenia */
+    padding: 1px;              /* Wewnętrzne marginesy */
+	border-color: rgb(0, 0, 0);
+
+
+</string>
+                     </property>
                      <item>
                       <property name="text">
                        <string>Lionel Messi-99</string>
@@ -493,6 +582,20 @@ color: rgb(255, 255, 255);
                    </item>
                    <item alignment="Qt::AlignmentFlag::AlignHCenter">
                     <widget class="QComboBox" name="comboBox_right_forward">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
+color: rgb(255, 255, 255);
+	font: 600 italic 10pt &quot;Segoe UI&quot;;
+
+	border-color: rgb(0, 0, 0);
+
+    border-radius: 5px;        /* Promień zaokrąglenia */
+    padding: 1px;              /* Wewnętrzne marginesy */
+	border-color: rgb(0, 0, 0);
+
+
+</string>
+                     </property>
                      <item>
                       <property name="text">
                        <string>Anthony Gordon-87</string>
@@ -539,6 +642,20 @@ color: rgb(255, 255, 255);
                   <layout class="QHBoxLayout" name="horizontalLayout_5">
                    <item alignment="Qt::AlignmentFlag::AlignHCenter">
                     <widget class="QComboBox" name="comboBox_defensive_midfielder_1">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
+color: rgb(255, 255, 255);
+	font: 600 italic 10pt &quot;Segoe UI&quot;;
+
+	border-color: rgb(0, 0, 0);
+
+    border-radius: 5px;        /* Promień zaokrąglenia */
+    padding: 1px;              /* Wewnętrzne marginesy */
+	border-color: rgb(0, 0, 0);
+
+
+</string>
+                     </property>
                      <item>
                       <property name="text">
                        <string>Nemanja Matic-80</string>
@@ -568,6 +685,20 @@ color: rgb(255, 255, 255);
                    </item>
                    <item alignment="Qt::AlignmentFlag::AlignHCenter">
                     <widget class="QComboBox" name="comboBox_defensive_midfielder_2">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
+color: rgb(255, 255, 255);
+	font: 600 italic 10pt &quot;Segoe UI&quot;;
+
+	border-color: rgb(0, 0, 0);
+
+    border-radius: 5px;        /* Promień zaokrąglenia */
+    padding: 1px;              /* Wewnętrzne marginesy */
+	border-color: rgb(0, 0, 0);
+
+
+</string>
+                     </property>
                      <item>
                       <property name="text">
                        <string>Grzegorz Krychowiak-78</string>
@@ -614,6 +745,20 @@ color: rgb(255, 255, 255);
                   <layout class="QHBoxLayout" name="horizontalLayout_6">
                    <item alignment="Qt::AlignmentFlag::AlignHCenter">
                     <widget class="QComboBox" name="comboBox_left_back">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
+color: rgb(255, 255, 255);
+	font: 600 italic 10pt &quot;Segoe UI&quot;;
+
+	border-color: rgb(0, 0, 0);
+
+    border-radius: 5px;        /* Promień zaokrąglenia */
+    padding: 1px;              /* Wewnętrzne marginesy */
+	border-color: rgb(0, 0, 0);
+
+
+</string>
+                     </property>
                      <item>
                       <property name="text">
                        <string>Alex Telles-85</string>
@@ -643,6 +788,20 @@ color: rgb(255, 255, 255);
                    </item>
                    <item alignment="Qt::AlignmentFlag::AlignHCenter">
                     <widget class="QComboBox" name="comboBox_center_back_1">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
+color: rgb(255, 255, 255);
+	font: 600 italic 10pt &quot;Segoe UI&quot;;
+
+	border-color: rgb(0, 0, 0);
+
+    border-radius: 5px;        /* Promień zaokrąglenia */
+    padding: 1px;              /* Wewnętrzne marginesy */
+	border-color: rgb(0, 0, 0);
+
+
+</string>
+                     </property>
                      <item>
                       <property name="text">
                        <string>Kalidou Koulibaly-88</string>
@@ -672,6 +831,20 @@ color: rgb(255, 255, 255);
                    </item>
                    <item alignment="Qt::AlignmentFlag::AlignHCenter">
                     <widget class="QComboBox" name="comboBox_center_back_2">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
+color: rgb(255, 255, 255);
+	font: 600 italic 10pt &quot;Segoe UI&quot;;
+
+	border-color: rgb(0, 0, 0);
+
+    border-radius: 5px;        /* Promień zaokrąglenia */
+    padding: 1px;              /* Wewnętrzne marginesy */
+	border-color: rgb(0, 0, 0);
+
+
+</string>
+                     </property>
                      <item>
                       <property name="text">
                        <string>Sergio Ramos-95</string>
@@ -701,6 +874,20 @@ color: rgb(255, 255, 255);
                    </item>
                    <item alignment="Qt::AlignmentFlag::AlignHCenter">
                     <widget class="QComboBox" name="comboBox_right_back">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
+color: rgb(255, 255, 255);
+	font: 600 italic 10pt &quot;Segoe UI&quot;;
+
+	border-color: rgb(0, 0, 0);
+
+    border-radius: 5px;        /* Promień zaokrąglenia */
+    padding: 1px;              /* Wewnętrzne marginesy */
+	border-color: rgb(0, 0, 0);
+
+
+</string>
+                     </property>
                      <item>
                       <property name="text">
                        <string>Matty Cash-80</string>
@@ -747,6 +934,20 @@ color: rgb(255, 255, 255);
                   <layout class="QHBoxLayout" name="horizontalLayout_7">
                    <item alignment="Qt::AlignmentFlag::AlignHCenter">
                     <widget class="QComboBox" name="comboBox_goalkeeper">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
+color: rgb(255, 255, 255);
+	font: 600 italic 10pt &quot;Segoe UI&quot;;
+
+	border-color: rgb(0, 0, 0);
+
+    border-radius: 5px;        /* Promień zaokrąglenia */
+    padding: 1px;              /* Wewnętrzne marginesy */
+	border-color: rgb(0, 0, 0);
+
+
+</string>
+                     </property>
                      <item>
                       <property name="text">
                        <string>Emilliano Martinez-85</string>

@@ -9,14 +9,19 @@ CustomCalendarWidget::~CustomCalendarWidget()
 void CustomCalendarWidget::paintCell(QPainter* painter, const QRect& rect, const QDate& date) const {
     QCalendarWidget::paintCell(painter, rect, date);
 
-        // Tutaj mo¿esz dodaæ kod rysuj¹cy tekst lub ikonê
-        painter->save();
-        painter->setPen(Qt::blue);
-        painter->drawText(rect, Qt::AlignCenter, "X"); // Przyk³ad: rysowanie tekstu "X" w œrodku komórki
-        painter->restore();
+    // Rysowanie tekstu "X" w œrodku komórki
+    painter->save();
+    painter->setPen(Qt::blue);
+    painter->drawText(rect, Qt::AlignCenter, "X");
+    painter->restore();
 
-        if (date.day()==20) 
-        {
-            painter->drawImage(rect.x(), rect.y(), QImage("images/matchday.jpg"));
+    if (date.day() == 20) {
+        QImage image(":/images/matchday.jpg"); // U¿ycie œcie¿ki zasobów (resource path)
+        if (!image.isNull()) { // Sprawdzenie, czy obraz zosta³ za³adowany prawid³owo
+            painter->drawImage(rect, image);
         }
+        else {
+            qDebug() << "Nie mo¿na za³adowaæ obrazu: images/matchday.jpg";
+        }
+    }
 }

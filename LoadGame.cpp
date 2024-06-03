@@ -212,7 +212,26 @@ void LoadGame::on_pushButton_play_clicked()
 		week++;
 		ui.stackedWidget->setCurrentIndex(2);
 	}
-	//TODO jakis komunikat o zakonczeniu sezonu
+	else
+	{
+		std::string my_team_name = "saves/" + ui.textEdit_file_name->toPlainText().toStdString() + "MyTeam.txt";
+		std::ifstream my_team_file(my_team_name);
+		std::string my_team;
+		std::getline(my_team_file, my_team);
+		my_team_file.close();
+		for (int i = 0; i < league.size(); i++)
+		{
+			if (league[i].name == my_team)
+			{
+				QString place = QString::fromStdString(std::to_string(i + 1));
+				QString text = "Congratulations! You finished in " + place;
+				text+=" place.";
+				ui.label_date->setText(text);
+			}
+		}
+		
+		
+	}
 	
 }
 

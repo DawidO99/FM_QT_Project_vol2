@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="/new/prefix1">
+    <file>images/9b50e19f-8d5d-444b-a51f-debda13bcf8e.png</file>
     <file>images/vecteezy_football-field.jpg</file>
   </qresource>
 </RCC>

@@ -2,7 +2,6 @@
 
 #include <QMainWindow>
 #include "ui_LoadGame.h"
-#include "CustomCalendarWidget.h"
 #include "playable_classes.h"
 
 class LoadGame : public QMainWindow
@@ -17,7 +16,6 @@ public:
 
 private:
 	Ui::LoadGameClass ui;
-	CustomCalendarWidget* customCalendar;
 	std::vector<Player>squad;
 	std::vector<Team>league;
 

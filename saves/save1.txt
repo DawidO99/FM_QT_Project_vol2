@@ -1,0 +1,126 @@
+Piast Gliwice
+Dawid Ochman
+GKS
+85
+68
+RB Lipsk
+Marco Rose
+RBL
+80
+67
+PSG
+Luis Enrique
+PSG
+88
+63
+Borussia Dortmund
+Edin Terzic
+BVB
+86
+58
+Bayer Leverkusen
+Xabi Alonso
+LEV
+93
+56
+Real Madryt
+Carlo Ancelotti
+RMA
+95
+55
+Arsenal
+Mikel Arteta
+ARS
+92
+54
+Chelsea
+Mauricio Pochettino
+CHE
+80
+53
+Inter
+Simone Inzaghi
+INT
+87
+53
+Manchester City
+Pep Guardiola
+MCI
+95
+52
+Manchester United
+Erik Ten Hag
+MUN
+76
+52
+FC Barcelona
+Xavi
+FCB
+86
+51
+Atletico Madryt
+Diego Simeone
+ATM
+90
+51
+Bayern Monachium
+Thomas Tuchel
+BAY
+91
+50
+Tottenham
+Ange Postecoglou
+TOT
+85
+48
+AS Monaco
+Adi Hutter
+ASM
+77
+48
+Liverpool
+Jurgen Klopp
+LIV
+90
+47
+Milan
+Stefano Pioli
+MIL
+84
+44
+Napoli
+Francesco Calzona
+NAP
+74
+38
+Juventus
+Paolo Montero
+JUV
+81
+36
+$
+Kamil Grabara
+82
+Matty Cash
+80
+Fabian Schar
+83
+Aymeric Laporte
+85
+Marcos Acuna
+83
+Blaise Matuidi
+85
+Ruben Neves
+84
+Mikel Oyarzabal
+84
+Mesut Ozil
+94
+Lorenzo Insigne
+87
+Ciro Immobile
+88
+#
+38
+$

@@ -38,6 +38,9 @@
     <QtRcc Include="NewGame.qrc">
       <Filter>Resource Files</Filter>
     </QtRcc>
+    <QtRcc Include="LoadGame.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -49,9 +52,6 @@
     <ClCompile Include="NewGame.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CustomCalendarWidget.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="playable_classes.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -61,9 +61,6 @@
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="LoadGame.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
-    <QtMoc Include="CustomCalendarWidget.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>

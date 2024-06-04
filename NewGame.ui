@@ -36,7 +36,7 @@
        <number>0</number>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="page_create_team">
        <property name="styleSheet">
@@ -450,7 +450,7 @@ color: rgb(255, 255, 255);
                  <item>
                   <layout class="QVBoxLayout" name="verticalLayout_9">
                    <item>
-                    <widget class="QComboBox" name="comboBox_right_back">
+                    <widget class="QComboBox" name="comboBox_left_back">
                      <property name="styleSheet">
                       <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
 color: rgb(255, 255, 255);
@@ -467,27 +467,27 @@ color: rgb(255, 255, 255);
                      </property>
                      <item>
                       <property name="text">
-                       <string>Matty Cash-80</string>
+                       <string>Alex Telles-85</string>
                       </property>
                      </item>
                      <item>
                       <property name="text">
-                       <string>Kieran Trippier-86</string>
+                       <string>Grimlado-85</string>
                       </property>
                      </item>
                      <item>
                       <property name="text">
-                       <string>Thomas Meunier-83</string>
+                       <string>Marcos Acuna-83</string>
                       </property>
                      </item>
                      <item>
                       <property name="text">
-                       <string>Jesus Navas-82</string>
+                       <string>Tymoteusz Puchacz-99</string>
                       </property>
                      </item>
                      <item>
                       <property name="text">
-                       <string>Dani Alves-84</string>
+                       <string>Lucas Digne-80</string>
                       </property>
                      </item>
                     </widget>
@@ -579,7 +579,7 @@ color: rgb(255, 255, 255);
                     </widget>
                    </item>
                    <item>
-                    <widget class="QComboBox" name="comboBox_left_back">
+                    <widget class="QComboBox" name="comboBox_right_back">
                      <property name="styleSheet">
                       <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
 color: rgb(255, 255, 255);
@@ -596,27 +596,27 @@ color: rgb(255, 255, 255);
                      </property>
                      <item>
                       <property name="text">
-                       <string>Alex Telles-85</string>
+                       <string>Matty Cash-80</string>
                       </property>
                      </item>
                      <item>
                       <property name="text">
-                       <string>Grimlado-85</string>
+                       <string>Kieran Trippier-86</string>
                       </property>
                      </item>
                      <item>
                       <property name="text">
-                       <string>Marcos Acuna-83</string>
+                       <string>Thomas Meunier-83</string>
                       </property>
                      </item>
                      <item>
                       <property name="text">
-                       <string>Tymoteusz Puchacz-99</string>
+                       <string>Jesus Navas-82</string>
                       </property>
                      </item>
                      <item>
                       <property name="text">
-                       <string>Lucas Digne-80</string>
+                       <string>Dani Alves-84</string>
                       </property>
                      </item>
                     </widget>
@@ -716,49 +716,6 @@ color: rgb(255, 255, 255);
                  <item>
                   <layout class="QVBoxLayout" name="verticalLayout_5">
                    <item>
-                    <widget class="QComboBox" name="comboBox_offensive_midfielder">
-                     <property name="styleSheet">
-                      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
-color: rgb(255, 255, 255);
-	font: 600 italic 10pt &quot;Segoe UI&quot;;
-
-	border-color: rgb(0, 0, 0);
-
-    border-radius: 5px;        /* Promień zaokrąglenia */
-    padding: 1px;              /* Wewnętrzne marginesy */
-	border-color: rgb(0, 0, 0);
-
-
-</string>
-                     </property>
-                     <item>
-                      <property name="text">
-                       <string>Lionel Messi-99</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Mesut Ozil-94</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Marco Veratti-86</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Bruno Guimaraes-88</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Wissam Ben Yedder-90</string>
-                      </property>
-                     </item>
-                    </widget>
-                   </item>
-                   <item>
                     <widget class="QComboBox" name="comboBox_left_forward">
                      <property name="styleSheet">
                       <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
@@ -797,6 +754,49 @@ color: rgb(255, 255, 255);
                      <item>
                       <property name="text">
                        <string>Lorenzo Insigne-87</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="comboBox_offensive_midfielder">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
+color: rgb(255, 255, 255);
+	font: 600 italic 10pt &quot;Segoe UI&quot;;
+
+	border-color: rgb(0, 0, 0);
+
+    border-radius: 5px;        /* Promień zaokrąglenia */
+    padding: 1px;              /* Wewnętrzne marginesy */
+	border-color: rgb(0, 0, 0);
+
+
+</string>
+                     </property>
+                     <item>
+                      <property name="text">
+                       <string>Lionel Messi-99</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Mesut Ozil-94</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Marco Veratti-86</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Bruno Guimaraes-88</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Wissam Ben Yedder-90</string>
                       </property>
                      </item>
                     </widget>

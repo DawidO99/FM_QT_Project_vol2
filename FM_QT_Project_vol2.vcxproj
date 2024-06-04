@@ -100,7 +100,6 @@
     <QtUic Include="NewGame.ui" />
     <QtUic Include="StartScreen.ui" />
     <QtMoc Include="StartScreen.h" />
-    <ClCompile Include="CustomCalendarWidget.cpp" />
     <ClCompile Include="LoadGame.cpp" />
     <ClCompile Include="NewGame.cpp">
       <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
@@ -117,9 +116,6 @@
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="LoadGame.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <QtMoc Include="CustomCalendarWidget.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="playable_classes.h" />

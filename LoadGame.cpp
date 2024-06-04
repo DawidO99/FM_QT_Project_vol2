@@ -231,7 +231,7 @@ void LoadGame::on_pushButton_play_clicked()
 
 void LoadGame::on_pushButton_go_back_clicked()
 {
-	ui.label_date->setText("The match is over. That was an intense game!");
+	ui.label_date->setText("The match is over.");
 	ui.stackedWidget->setCurrentIndex(1);
 	ui.stackedWidget_content->setCurrentIndex(2);
 }

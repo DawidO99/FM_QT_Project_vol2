@@ -333,7 +333,8 @@ QPushButton:hover {
                <widget class="QLabel" name="label_2">
                 <property name="styleSheet">
                  <string notr="true">font: 600 italic 50pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
+color: rgb(255, 255, 255);
+</string>
                 </property>
                 <property name="text">
                  <string>     Pick your team</string>
@@ -373,35 +374,23 @@ QPushButton:hover {
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_2">
               <item>
-               <spacer name="horizontalSpacer">
-                <property name="orientation">
-                 <enum>Qt::Orientation::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>261</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
                <widget class="QFrame" name="frame_field">
                 <property name="minimumSize">
                  <size>
-                  <width>432</width>
-                  <height>654</height>
+                  <width>1005</width>
+                  <height>635</height>
                  </size>
                 </property>
                 <property name="maximumSize">
                  <size>
-                  <width>432</width>
-                  <height>654</height>
+                  <width>1005</width>
+                  <height>635</height>
                  </size>
                 </property>
                 <property name="styleSheet">
                  <string notr="true">#frame_field{
-image: url(:/field/images/soccer_field.png);
+	border: 2px solid rgb(42, 42, 42);
+	image: url(:/field/images/vecteezy_football-field-or-soccer-field-background-vector-green_3543439.jpg);
 }</string>
                 </property>
                 <property name="frameShape">
@@ -410,529 +399,10 @@ image: url(:/field/images/soccer_field.png);
                 <property name="frameShadow">
                  <enum>QFrame::Shadow::Plain</enum>
                 </property>
-                <layout class="QVBoxLayout" name="verticalLayout_5" stretch="4,0,4,0,4,0,4,0,4,0,1">
+                <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0,0,0,0,0">
                  <item>
-                  <spacer name="verticalSpacer_3">
-                   <property name="orientation">
-                    <enum>Qt::Orientation::Vertical</enum>
-                   </property>
-                   <property name="sizeType">
-                    <enum>QSizePolicy::Policy::Expanding</enum>
-                   </property>
-                   <property name="sizeHint" stdset="0">
-                    <size>
-                     <width>20</width>
-                     <height>40</height>
-                    </size>
-                   </property>
-                  </spacer>
-                 </item>
-                 <item>
-                  <layout class="QHBoxLayout" name="horizontalLayout_3">
-                   <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                    <widget class="QComboBox" name="comboBox_center_forward">
-                     <property name="styleSheet">
-                      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
-color: rgb(255, 255, 255);
-	font: 600 italic 10pt &quot;Segoe UI&quot;;
-
-	border-color: rgb(0, 0, 0);
-
-    border-radius: 5px;        /* Promień zaokrąglenia */
-    padding: 1px;              /* Wewnętrzne marginesy */
-	border-color: rgb(0, 0, 0);
-
-
-</string>
-                     </property>
-                     <item>
-                      <property name="text">
-                       <string>Cristiano Ronaldo-99</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Krzysztof Piątek-85</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Ciro Immobile-88</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Jamie Vardy-85</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Mauro Icardi-83</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string/>
-                      </property>
-                     </item>
-                    </widget>
-                   </item>
-                  </layout>
-                 </item>
-                 <item>
-                  <spacer name="verticalSpacer_5">
-                   <property name="orientation">
-                    <enum>Qt::Orientation::Vertical</enum>
-                   </property>
-                   <property name="sizeHint" stdset="0">
-                    <size>
-                     <width>20</width>
-                     <height>40</height>
-                    </size>
-                   </property>
-                  </spacer>
-                 </item>
-                 <item>
-                  <layout class="QHBoxLayout" name="horizontalLayout_4">
-                   <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                    <widget class="QComboBox" name="comboBox_left_forward">
-                     <property name="styleSheet">
-                      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
-color: rgb(255, 255, 255);
-	font: 600 italic 10pt &quot;Segoe UI&quot;;
-
-	border-color: rgb(0, 0, 0);
-
-    border-radius: 5px;        /* Promień zaokrąglenia */
-    padding: 1px;              /* Wewnętrzne marginesy */
-	border-color: rgb(0, 0, 0);
-
-
-</string>
-                     </property>
-                     <item>
-                      <property name="text">
-                       <string>Dusan Tadic-85</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Neymar Jr-90</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Sadio Mane-86</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Lucas Ocampos-82</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Lorenzo Insigne-87</string>
-                      </property>
-                     </item>
-                    </widget>
-                   </item>
-                   <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                    <widget class="QComboBox" name="comboBox_offensive_midfielder">
-                     <property name="styleSheet">
-                      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
-color: rgb(255, 255, 255);
-	font: 600 italic 10pt &quot;Segoe UI&quot;;
-
-	border-color: rgb(0, 0, 0);
-
-    border-radius: 5px;        /* Promień zaokrąglenia */
-    padding: 1px;              /* Wewnętrzne marginesy */
-	border-color: rgb(0, 0, 0);
-
-
-</string>
-                     </property>
-                     <item>
-                      <property name="text">
-                       <string>Lionel Messi-99</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Mesut Ozil-94</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Marco Veratti-86</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Bruno Guimaraes-88</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Wissam Ben Yedder-90</string>
-                      </property>
-                     </item>
-                    </widget>
-                   </item>
-                   <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                    <widget class="QComboBox" name="comboBox_right_forward">
-                     <property name="styleSheet">
-                      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
-color: rgb(255, 255, 255);
-	font: 600 italic 10pt &quot;Segoe UI&quot;;
-
-	border-color: rgb(0, 0, 0);
-
-    border-radius: 5px;        /* Promień zaokrąglenia */
-    padding: 1px;              /* Wewnętrzne marginesy */
-	border-color: rgb(0, 0, 0);
-
-
-</string>
-                     </property>
-                     <item>
-                      <property name="text">
-                       <string>Anthony Gordon-87</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Takefusa Kubo-85</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Angel Di Maria-90</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Riyad Mahrez-86</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Mikel Oyarzabal-84</string>
-                      </property>
-                     </item>
-                    </widget>
-                   </item>
-                  </layout>
-                 </item>
-                 <item>
-                  <spacer name="verticalSpacer_6">
-                   <property name="orientation">
-                    <enum>Qt::Orientation::Vertical</enum>
-                   </property>
-                   <property name="sizeHint" stdset="0">
-                    <size>
-                     <width>20</width>
-                     <height>40</height>
-                    </size>
-                   </property>
-                  </spacer>
-                 </item>
-                 <item>
-                  <layout class="QHBoxLayout" name="horizontalLayout_5">
-                   <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                    <widget class="QComboBox" name="comboBox_defensive_midfielder_1">
-                     <property name="styleSheet">
-                      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
-color: rgb(255, 255, 255);
-	font: 600 italic 10pt &quot;Segoe UI&quot;;
-
-	border-color: rgb(0, 0, 0);
-
-    border-radius: 5px;        /* Promień zaokrąglenia */
-    padding: 1px;              /* Wewnętrzne marginesy */
-	border-color: rgb(0, 0, 0);
-
-
-</string>
-                     </property>
-                     <item>
-                      <property name="text">
-                       <string>Nemanja Matic-80</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Fabinho-85</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Parejo-87</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Ruben Neves-84</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Marcelo Brozovic-83</string>
-                      </property>
-                     </item>
-                    </widget>
-                   </item>
-                   <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                    <widget class="QComboBox" name="comboBox_defensive_midfielder_2">
-                     <property name="styleSheet">
-                      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
-color: rgb(255, 255, 255);
-	font: 600 italic 10pt &quot;Segoe UI&quot;;
-
-	border-color: rgb(0, 0, 0);
-
-    border-radius: 5px;        /* Promień zaokrąglenia */
-    padding: 1px;              /* Wewnętrzne marginesy */
-	border-color: rgb(0, 0, 0);
-
-
-</string>
-                     </property>
-                     <item>
-                      <property name="text">
-                       <string>Grzegorz Krychowiak-78</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>N'Golo Kante-90</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Paul Pogba-85</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Sandro Tonali-86</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Blaise Matuidi-85</string>
-                      </property>
-                     </item>
-                    </widget>
-                   </item>
-                  </layout>
-                 </item>
-                 <item>
-                  <spacer name="verticalSpacer_7">
-                   <property name="orientation">
-                    <enum>Qt::Orientation::Vertical</enum>
-                   </property>
-                   <property name="sizeHint" stdset="0">
-                    <size>
-                     <width>20</width>
-                     <height>40</height>
-                    </size>
-                   </property>
-                  </spacer>
-                 </item>
-                 <item>
-                  <layout class="QHBoxLayout" name="horizontalLayout_6">
-                   <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                    <widget class="QComboBox" name="comboBox_left_back">
-                     <property name="styleSheet">
-                      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
-color: rgb(255, 255, 255);
-	font: 600 italic 10pt &quot;Segoe UI&quot;;
-
-	border-color: rgb(0, 0, 0);
-
-    border-radius: 5px;        /* Promień zaokrąglenia */
-    padding: 1px;              /* Wewnętrzne marginesy */
-	border-color: rgb(0, 0, 0);
-
-
-</string>
-                     </property>
-                     <item>
-                      <property name="text">
-                       <string>Alex Telles-85</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Grimlado-85</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Marcos Acuna-83</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Tymoteusz Puchacz-99</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Lucas Digne-80</string>
-                      </property>
-                     </item>
-                    </widget>
-                   </item>
-                   <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                    <widget class="QComboBox" name="comboBox_center_back_1">
-                     <property name="styleSheet">
-                      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
-color: rgb(255, 255, 255);
-	font: 600 italic 10pt &quot;Segoe UI&quot;;
-
-	border-color: rgb(0, 0, 0);
-
-    border-radius: 5px;        /* Promień zaokrąglenia */
-    padding: 1px;              /* Wewnętrzne marginesy */
-	border-color: rgb(0, 0, 0);
-
-
-</string>
-                     </property>
-                     <item>
-                      <property name="text">
-                       <string>Kalidou Koulibaly-88</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Aymeric Laporte-85</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Leonardo Bonucci-90</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Giorgio Chiellini-89</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Michał Pazdan-99</string>
-                      </property>
-                     </item>
-                    </widget>
-                   </item>
-                   <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                    <widget class="QComboBox" name="comboBox_center_back_2">
-                     <property name="styleSheet">
-                      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
-color: rgb(255, 255, 255);
-	font: 600 italic 10pt &quot;Segoe UI&quot;;
-
-	border-color: rgb(0, 0, 0);
-
-    border-radius: 5px;        /* Promień zaokrąglenia */
-    padding: 1px;              /* Wewnętrzne marginesy */
-	border-color: rgb(0, 0, 0);
-
-
-</string>
-                     </property>
-                     <item>
-                      <property name="text">
-                       <string>Sergio Ramos-95</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Kamil Glik-85</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Pique-85</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Sven Botman-86</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Fabian Schar-83</string>
-                      </property>
-                     </item>
-                    </widget>
-                   </item>
-                   <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                    <widget class="QComboBox" name="comboBox_right_back">
-                     <property name="styleSheet">
-                      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
-color: rgb(255, 255, 255);
-	font: 600 italic 10pt &quot;Segoe UI&quot;;
-
-	border-color: rgb(0, 0, 0);
-
-    border-radius: 5px;        /* Promień zaokrąglenia */
-    padding: 1px;              /* Wewnętrzne marginesy */
-	border-color: rgb(0, 0, 0);
-
-
-</string>
-                     </property>
-                     <item>
-                      <property name="text">
-                       <string>Matty Cash-80</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Kieran Trippier-86</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Thomas Meunier-83</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Jesus Navas-82</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Dani Alves-84</string>
-                      </property>
-                     </item>
-                    </widget>
-                   </item>
-                  </layout>
-                 </item>
-                 <item>
-                  <spacer name="verticalSpacer_8">
-                   <property name="orientation">
-                    <enum>Qt::Orientation::Vertical</enum>
-                   </property>
-                   <property name="sizeHint" stdset="0">
-                    <size>
-                     <width>20</width>
-                     <height>40</height>
-                    </size>
-                   </property>
-                  </spacer>
-                 </item>
-                 <item>
-                  <layout class="QHBoxLayout" name="horizontalLayout_7">
-                   <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                  <layout class="QVBoxLayout" name="verticalLayout_10">
+                   <item>
                     <widget class="QComboBox" name="comboBox_goalkeeper">
                      <property name="styleSheet">
                       <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
@@ -978,36 +448,453 @@ color: rgb(255, 255, 255);
                   </layout>
                  </item>
                  <item>
-                  <spacer name="verticalSpacer_4">
-                   <property name="orientation">
-                    <enum>Qt::Orientation::Vertical</enum>
-                   </property>
-                   <property name="sizeType">
-                    <enum>QSizePolicy::Policy::Expanding</enum>
-                   </property>
-                   <property name="sizeHint" stdset="0">
-                    <size>
-                     <width>20</width>
-                     <height>40</height>
-                    </size>
-                   </property>
-                  </spacer>
+                  <layout class="QVBoxLayout" name="verticalLayout_9">
+                   <item>
+                    <widget class="QComboBox" name="comboBox_right_back">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
+color: rgb(255, 255, 255);
+	font: 600 italic 10pt &quot;Segoe UI&quot;;
+
+	border-color: rgb(0, 0, 0);
+
+    border-radius: 5px;        /* Promień zaokrąglenia */
+    padding: 1px;              /* Wewnętrzne marginesy */
+	border-color: rgb(0, 0, 0);
+
+
+</string>
+                     </property>
+                     <item>
+                      <property name="text">
+                       <string>Matty Cash-80</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Kieran Trippier-86</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Thomas Meunier-83</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Jesus Navas-82</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Dani Alves-84</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="comboBox_center_back_2">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
+color: rgb(255, 255, 255);
+	font: 600 italic 10pt &quot;Segoe UI&quot;;
+
+	border-color: rgb(0, 0, 0);
+
+    border-radius: 5px;        /* Promień zaokrąglenia */
+    padding: 1px;              /* Wewnętrzne marginesy */
+	border-color: rgb(0, 0, 0);
+
+
+</string>
+                     </property>
+                     <item>
+                      <property name="text">
+                       <string>Sergio Ramos-95</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Kamil Glik-85</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Pique-85</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Sven Botman-86</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Fabian Schar-83</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="comboBox_center_back_1">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
+color: rgb(255, 255, 255);
+	font: 600 italic 10pt &quot;Segoe UI&quot;;
+
+	border-color: rgb(0, 0, 0);
+
+    border-radius: 5px;        /* Promień zaokrąglenia */
+    padding: 1px;              /* Wewnętrzne marginesy */
+	border-color: rgb(0, 0, 0);
+
+
+</string>
+                     </property>
+                     <item>
+                      <property name="text">
+                       <string>Kalidou Koulibaly-88</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Aymeric Laporte-85</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Leonardo Bonucci-90</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Giorgio Chiellini-89</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Michał Pazdan-99</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="comboBox_left_back">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
+color: rgb(255, 255, 255);
+	font: 600 italic 10pt &quot;Segoe UI&quot;;
+
+	border-color: rgb(0, 0, 0);
+
+    border-radius: 5px;        /* Promień zaokrąglenia */
+    padding: 1px;              /* Wewnętrzne marginesy */
+	border-color: rgb(0, 0, 0);
+
+
+</string>
+                     </property>
+                     <item>
+                      <property name="text">
+                       <string>Alex Telles-85</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Grimlado-85</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Marcos Acuna-83</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Tymoteusz Puchacz-99</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Lucas Digne-80</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_7">
+                   <item>
+                    <widget class="QComboBox" name="comboBox_defensive_midfielder_2">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
+color: rgb(255, 255, 255);
+	font: 600 italic 10pt &quot;Segoe UI&quot;;
+
+	border-color: rgb(0, 0, 0);
+
+    border-radius: 5px;        /* Promień zaokrąglenia */
+    padding: 1px;              /* Wewnętrzne marginesy */
+	border-color: rgb(0, 0, 0);
+
+
+</string>
+                     </property>
+                     <item>
+                      <property name="text">
+                       <string>Grzegorz Krychowiak-78</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>N'Golo Kante-90</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Paul Pogba-85</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Sandro Tonali-86</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Blaise Matuidi-85</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="comboBox_defensive_midfielder_1">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
+color: rgb(255, 255, 255);
+	font: 600 italic 10pt &quot;Segoe UI&quot;;
+
+	border-color: rgb(0, 0, 0);
+
+    border-radius: 5px;        /* Promień zaokrąglenia */
+    padding: 1px;              /* Wewnętrzne marginesy */
+	border-color: rgb(0, 0, 0);
+
+
+</string>
+                     </property>
+                     <item>
+                      <property name="text">
+                       <string>Nemanja Matic-80</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Fabinho-85</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Parejo-87</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Ruben Neves-84</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Marcelo Brozovic-83</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_5">
+                   <item>
+                    <widget class="QComboBox" name="comboBox_offensive_midfielder">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
+color: rgb(255, 255, 255);
+	font: 600 italic 10pt &quot;Segoe UI&quot;;
+
+	border-color: rgb(0, 0, 0);
+
+    border-radius: 5px;        /* Promień zaokrąglenia */
+    padding: 1px;              /* Wewnętrzne marginesy */
+	border-color: rgb(0, 0, 0);
+
+
+</string>
+                     </property>
+                     <item>
+                      <property name="text">
+                       <string>Lionel Messi-99</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Mesut Ozil-94</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Marco Veratti-86</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Bruno Guimaraes-88</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Wissam Ben Yedder-90</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="comboBox_left_forward">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
+color: rgb(255, 255, 255);
+	font: 600 italic 10pt &quot;Segoe UI&quot;;
+
+	border-color: rgb(0, 0, 0);
+
+    border-radius: 5px;        /* Promień zaokrąglenia */
+    padding: 1px;              /* Wewnętrzne marginesy */
+	border-color: rgb(0, 0, 0);
+
+
+</string>
+                     </property>
+                     <item>
+                      <property name="text">
+                       <string>Dusan Tadic-85</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Neymar Jr-90</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Sadio Mane-86</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Lucas Ocampos-82</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Lorenzo Insigne-87</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="comboBox_right_forward">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
+color: rgb(255, 255, 255);
+	font: 600 italic 10pt &quot;Segoe UI&quot;;
+
+	border-color: rgb(0, 0, 0);
+
+    border-radius: 5px;        /* Promień zaokrąglenia */
+    padding: 1px;              /* Wewnętrzne marginesy */
+	border-color: rgb(0, 0, 0);
+
+
+</string>
+                     </property>
+                     <item>
+                      <property name="text">
+                       <string>Anthony Gordon-87</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Takefusa Kubo-85</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Angel Di Maria-90</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Riyad Mahrez-86</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Mikel Oyarzabal-84</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_8">
+                   <item>
+                    <widget class="QComboBox" name="comboBox_center_forward">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(141, 141, 141, 255), stop:1 rgba(43, 43, 43, 255));
+color: rgb(255, 255, 255);
+	font: 600 italic 10pt &quot;Segoe UI&quot;;
+
+	border-color: rgb(0, 0, 0);
+
+    border-radius: 5px;        /* Promień zaokrąglenia */
+    padding: 1px;              /* Wewnętrzne marginesy */
+	border-color: rgb(0, 0, 0);
+
+
+</string>
+                     </property>
+                     <item>
+                      <property name="text">
+                       <string>Cristiano Ronaldo-99</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Krzysztof Piątek-85</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Ciro Immobile-88</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Jamie Vardy-85</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Mauro Icardi-83</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                  </layout>
                  </item>
                 </layout>
                </widget>
-              </item>
-              <item>
-               <spacer name="horizontalSpacer_2">
-                <property name="orientation">
-                 <enum>Qt::Orientation::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>40</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
               </item>
              </layout>
             </widget>

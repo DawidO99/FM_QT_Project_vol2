@@ -4,6 +4,8 @@ Umożliwia utowrzenie własnego trenera, a także całej drużyny,
 a następnie rozegranie pełnego sezonu w utworzonej na potrzeby
 gry Superlidze. Gra posiada własny system rozgrywania 
 spotkań, oparty na syntezie umiejętności zawodników
-oraz czynników losowych.
+oraz czynników losowych.*
+
+*Work in progress
 
 Autorzy : Dawid Ochman, Szymon Niedzielski
